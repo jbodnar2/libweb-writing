@@ -1,0 +1,6 @@
+extends: substitution
+message: "GSU Style: Punctuation belongs inside quotation marks."
+level: error
+swap:
+  '".': '."'
+  '",': ',"'

@@ -1,0 +1,6 @@
+extends: existence
+message: "Confirmed GSU Social Branding: '%s'"
+level: suggestion
+ignorecase: true
+tokens:
+  - "#TheStateWay"

@@ -1,0 +1,14 @@
+extends: existence
+message: "Atlanta quadrant missing. Use NE, SE, NW, or SW (no periods)."
+level: error
+tokens:
+  - '\d+ [A-Za-z ]+ (St|Ave|Blvd|Dr)(?! (NE|SE|NW|SW))'
+---
+extends: substitution
+message: "Library Style: Use '%s' for specific buildings/addresses."
+level: warning
+swap:
+  Welch Gallery: Ernest G. Welch School of Art & Design Gallery
+  One Park Place: 1 Park Place SE
+  Speakers Auditorium: Speaker’s Auditorium
+  103 Decatur Street: 100 Decatur Street SE

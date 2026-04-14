@@ -1,0 +1,8 @@
+extends: existence
+message: "GSU Style: Use lowercase a.m./p.m., no ':00', and use 'noon'/'midnight'."
+level: warning
+tokens:
+  - '\d+:00'
+  - '\d+ [AP]M'
+  - '12 p\.?m\.?'
+  - '12 a\.?m\.?'

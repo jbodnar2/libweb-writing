@@ -1,0 +1,9 @@
+extends: substitution
+message: "GSU Style: Use lowercase for '%s'."
+level: warning
+ignorecase: true
+swap:
+  Internet: internet
+  Website: website
+  Healthcare: healthcare
+  Coronavirus: coronavirus

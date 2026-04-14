@@ -1,0 +1,12 @@
+extends: substitution
+message: "GSU Style: Use '%s'."
+level: warning
+ignorecase: true
+swap:
+  doctoral degree: doctorate
+  bachelor's of: bachelor's degree in
+  master's of: master's degree in
+  B.A: B.A.
+  M.S: M.S.
+  PHD: Ph.D.
+  'Dr\. \w+ \w+, Ph\.D\.': "use either Dr. [Name] or [Name], Ph.D., but not both"

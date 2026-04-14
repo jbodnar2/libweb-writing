@@ -1,0 +1,11 @@
+extends: existence
+message: "GSU/Library Style: No Oxford Comma unless the last item contains a conjunction."
+level: warning
+tokens:
+  - '(?:\w+),\s+(?:and|or)\s+(?!\w+\s+and)'
+---
+extends: existence
+message: "GSU Style: No comma before suffixes like Jr. or Sr."
+level: error
+tokens:
+  - ', (Jr\.|Sr\.|IV|III|II)'
