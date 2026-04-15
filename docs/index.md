@@ -16,24 +16,28 @@ Use this file as the first stop when reviewing report output for web page conten
 
 | Report check examples                                                                        | Where to look first                                                                                      | Why                                                                |
 | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| `GSU.Identity`, `Library.Naming`, `Library.Locations`, `Library.Time`, `Library.Login`       | [gsu-libraries-styl-guide.md](./gsu-libraries-styl-guide.md), [gsu-style-guide.md](./gsu-style-guide.md) | Institutional and library-specific conventions                     |
-| `LibraryReadability.SentenceLength`, `LibraryReadability.ParagraphLength`                    | [web-readability-guidelines.md](./web-readability-guidelines.md)                                         | Readability thresholds and rationale                               |
-| Content structure, task clarity, image alt text, link usefulness                             | [library-web-purpose-accessibility-ux.md](./library-web-purpose-accessibility-ux.md)                     | UX/accessibility expectations for public web content               |
+| `GSU.Identity`, `Library.Naming`, `Library.Locations`, `Library.Time`, `Library.Login`       | [library-style-guide.md](./library-style-guide.md), [university-style-guide.md](./university-style-guide.md) | Institutional and library-specific conventions                     |
+| `ReadabilityStyle.SentenceLength`, `ReadabilityStyle.ParagraphLength`                        | [readability-style-guide.md](./readability-style-guide.md)                                                | Readability thresholds and rationale                               |
+| Content structure and task clarity                                                            | [library-service-content-guide.md](./library-service-content-guide.md)                                    | Service-page purpose and usability expectations                    |
+| Accessibility and alt text treatment                                                          | [accessibility-and-alt-text-guide.md](./accessibility-and-alt-text-guide.md)                              | Accessibility and image text alternative standards                 |
 | Generic package checks (`Microsoft.*`, `proselint.*`, `write-good.*`, `alex.*`, `Joblint.*`) | Start with project docs above, then apply judgment                                                       | Some generic checks are lower-priority than institutional guidance |
 
 ## What Each Guidance File Is For
 
-- [gsu-style-guide.md](./gsu-style-guide.md)
+- [university-style-guide.md](./university-style-guide.md)
   - Use for university-wide language, time/date, punctuation, and tone rules.
 
-- [gsu-libraries-styl-guide.md](./gsu-libraries-styl-guide.md)
+- [library-style-guide.md](./library-style-guide.md)
   - Use for library naming, addresses, floors, links, and service-page mechanics.
 
-- [web-readability-guidelines.md](./web-readability-guidelines.md)
+- [readability-style-guide.md](./readability-style-guide.md)
   - Use for sentence/paragraph thresholds and readability interpretation.
 
-- [library-web-purpose-accessibility-ux.md](./library-web-purpose-accessibility-ux.md)
-  - Use for page purpose, user-task orientation, accessibility, and alt text guidance.
+- [library-service-content-guide.md](./library-service-content-guide.md)
+  - Use for page purpose, task flow, and service-content usability guidance.
+
+- [accessibility-and-alt-text-guide.md](./accessibility-and-alt-text-guide.md)
+  - Use for accessibility expectations and alt text treatment.
 
 ## Quick Triage by Report Pattern
 

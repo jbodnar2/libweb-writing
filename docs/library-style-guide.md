@@ -14,7 +14,7 @@
 
 ## 2. Punctuation & Typography
 
-- Oxford Comma: Do not use. (e.g., _books, journals and databases_). See the [GSU Writer's Style Guide](./gsu-style-guide.md).
+- Oxford Comma: Do not use. (e.g., _books, journals and databases_). See the [GSU Writer's Style Guide](./university-style-guide.md).
 - Ampersand (&): Use only in headers, menus, or official titles (e.g., _Special Collections & Archives_). Always use and in body text.
 - Quotations: Use "double quotes" for primary quotes and 'single quotes' for quotes within quotes. Punctuation belongs inside the quotation marks.
 - Emphasis: Never underline text (reserved for links). Use bold sparingly. Avoid ALL CAPS.

@@ -58,4 +58,4 @@ These values are tuned for public service pages, policy pages, and instructional
 3. Internal GSU Writing Summary (this repo)
 
 - Scannability guidance and short paragraph emphasis.
-- See docs/gsu-style-guide.md
+- See docs/university-style-guide.md

@@ -23,10 +23,11 @@ Auto evaluate content for website
 
 - [Writer's Style Guide (GSU)](https://commkit.gsu.edu/writers-style-guide/)
 - [Editor Guide Index (Project Doc)](docs/index.md)
-- [GSU Style Guide Notes (Project Doc)](docs/gsu-style-guide.md)
-- [GSU Libraries Style Guide (Project Doc)](docs/gsu-libraries-styl-guide.md)
-- [Web Readability Guidelines (Project Doc)](docs/web-readability-guidelines.md)
-- [Library Website Purpose, Accessibility, and UX Guide (Project Doc)](docs/library-web-purpose-accessibility-ux.md)
+- [University Style Guide Notes (Project Doc)](docs/university-style-guide.md)
+- [Library Style Guide (Project Doc)](docs/library-style-guide.md)
+- [Readability Style Guide (Project Doc)](docs/readability-style-guide.md)
+- [Library Service Content Guide (Project Doc)](docs/library-service-content-guide.md)
+- [Accessibility and Alt Text Guide (Project Doc)](docs/accessibility-and-alt-text-guide.md)
 
 ### Tools
 
