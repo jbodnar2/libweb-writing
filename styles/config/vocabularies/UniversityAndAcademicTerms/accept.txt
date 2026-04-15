@@ -11,3 +11,5 @@ alumni
 Alumni
 alumnus
 Emeriti
+EXLab
+iCollege
