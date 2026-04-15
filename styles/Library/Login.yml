@@ -1,0 +1,23 @@
+extends: substitution
+message: "GSU/Library Style: Use '%s'."
+level: warning
+ignorecase: false
+swap:
+  log-in: log in
+  Log-in: Log in
+
+---
+extends: existence
+message: "Use 'log in' as a verb (e.g., 'log in to your account')."
+level: warning
+ignorecase: true
+tokens:
+  - '\blogin (to|with|using|into)\b'
+
+---
+extends: existence
+message: "Use 'login' as a noun/adjective (e.g., 'login page', 'login credentials')."
+level: suggestion
+ignorecase: true
+tokens:
+  - '\blog in (page|credentials|details|screen|info|information)\b'

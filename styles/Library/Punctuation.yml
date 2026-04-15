@@ -1,6 +1,6 @@
-extends: substitution
+extends: existence
 message: "GSU Style: Punctuation belongs inside quotation marks."
-level: error
-swap:
-  '".': '."'
-  '",': ',"'
+level: warning
+tokens:
+  - '"[^"\n]+"[\.,!?]'
+  - '“[^”\n]+”[\.,!?]'

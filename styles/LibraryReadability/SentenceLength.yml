@@ -1,0 +1,6 @@
+extends: occurrence
+message: "Readability: Try to keep sentences under 25 words for web scanning."
+scope: sentence
+level: warning
+max: 25
+token: \b(\w+)\b

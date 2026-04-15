@@ -1,6 +1,6 @@
 extends: existence
 message: "GSU/Library Style: No Oxford Comma unless the last item contains a conjunction."
-level: warning
+level: suggestion
 tokens:
   - '(?:\w+),\s+(?:and|or)\s+(?!\w+\s+and)'
 ---
