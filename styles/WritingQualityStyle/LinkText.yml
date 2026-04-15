@@ -3,8 +3,8 @@ message: "Use descriptive link text instead of '%s'."
 level: suggestion
 ignorecase: true
 tokens:
-  - '\\bclick here\\b'
-  - '\\bread more\\b'
-  - '\\blearn more\\b'
-  - '\\bmore info\\b'
-  - '\\bmore information\\b'
+  - '\bclick here\b'
+  - '\bread more\b'
+  - '\blearn more\b'
+  - '\bmore info\b'
+  - '\bmore information\b'

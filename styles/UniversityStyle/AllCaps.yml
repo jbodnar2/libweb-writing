@@ -2,7 +2,7 @@ extends: existence
 message: "GSU Style: Avoid all-caps for emphasis."
 level: suggestion
 tokens:
-  - '\\b[A-Z]{5,}\\b'
+  - '\b[A-Z]{5,}\b'
 exceptions:
   - GSU
   - URSA

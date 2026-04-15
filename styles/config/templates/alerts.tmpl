@@ -2,8 +2,8 @@
 {{- if .Alerts }}
 {{- range .Alerts }}
 - **Line {{ .Line }}**: [{{ .Severity }}] *{{ .Check }}*
-  - **Issue**: {{ .Message }}
   - **Found**: `{{ .Match }}`
+  - **Issue**: {{ .Message }}
 {{- end }}
 {{- else }}
 - No issues found.

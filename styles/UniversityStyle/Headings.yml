@@ -1,6 +1,0 @@
-extends: existence
-message: "GSU Style: Avoid using 'GSU' in headlines or page titles."
-level: warning
-scope: heading
-tokens:
-  - "GSU"

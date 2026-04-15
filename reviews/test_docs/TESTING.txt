@@ -1,0 +1,43 @@
+# Test Docs for Rule Validation
+
+These files are intentionally written with known issues so you can verify that custom rules and configs still work after changes.
+
+## How to Run
+
+- Run one file:
+  - ./review.sh test_docs/01-university-style-checks.md
+- Run all test docs:
+  - for f in reviews/test_docs/*.md; do base="${f#reviews/}"; ./review.sh "$base"; done
+
+## Files and Intended Coverage
+
+- 01-university-style-checks.md
+  - UniversityStyle.Headings
+  - UniversityStyle.Identity
+  - UniversityStyle.Login
+  - UniversityStyle.Time
+  - UniversityStyle.Technical
+  - UniversityStyle.Exclamation
+  - UniversityStyle.AllCaps
+
+- 02-library-style-checks.md
+  - LibraryStyle.Naming
+  - LibraryStyle.Locations
+
+- 03-writing-quality-checks.md
+  - WritingQualityStyle.Commas
+  - WritingQualityStyle.Grammar
+  - WritingQualityStyle.Jargon
+  - WritingQualityStyle.LinkText
+  - WritingQualityStyle.Punctuation
+  - WritingQualityStyle.Quotes
+
+- 04-readability-checks.md
+  - ReadabilityStyle.SentenceLength
+  - ReadabilityStyle.SentenceLengthHighRisk
+  - ReadabilityStyle.ParagraphLength
+
+## Notes
+
+- These files are synthetic and are not meant to be style-compliant.
+- Keep them in version control as a regression test set.

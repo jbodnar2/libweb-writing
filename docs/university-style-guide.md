@@ -40,7 +40,8 @@ See the full [Writer's Style Guide](https://commkit.gsu.edu/writers-style-guide/
 ## 5. Web & Technical Mechanics
 
 - Links: Use descriptive text (e.g., [View the 2026 Academic Calendar]). Never use "click here" or "read more."
-- Login vs. Log in: \* Login (Noun/Adj): "Enter your login credentials."
+- Login vs. Log in:
+  - Login (Noun/Adj): "Enter your login credentials."
   - Log in (Verb): "Please log in to the portal."
 - Email: One word, no hyphen.
 - Website: One word, lowercase, unless starting a sentence.

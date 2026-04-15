@@ -1,8 +1,8 @@
 {{- range .Files }}# Review for {{ .Path }}
 {{ range .Alerts }}
 - **Line {{ .Line }}**: [{{ .Severity }}] *{{ .Check }}*
-  - **Issue**: {{ .Message }}
   - **Found**: `{{ .Match }}`
+  - **Issue**: {{ .Message }}
 {{ end }}
 
 {{- end }}
