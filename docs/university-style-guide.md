@@ -1,10 +1,4 @@
-# GSU Writer's Style Guide
-
-## When to Use This File
-
-- Use this first for university-wide language and writing conventions.
-- Use this when reports flag time/date, punctuation, inclusive language, and web mechanics checks.
-- Use this as baseline policy when a generic lint rule conflicts with local project intent.
+# University Style Guide
 
 See the full [Writer's Style Guide](https://commkit.gsu.edu/writers-style-guide/) for full documentation.
 

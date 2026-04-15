@@ -1,12 +1,4 @@
-# Library Service Content Guide
-
-## When to Use This File
-
-- Use this first when shaping page purpose, task flow, and usability for public service content.
-- Use this when findings suggest unclear structure, weak task orientation, or hard-to-scan service content.
-- Use this with the readability and accessibility guides when content quality issues overlap.
-
-This guide defines how library web pages should work as service content, not promotional content.
+# Library Website Content Guide
 
 ## 1. Website Purpose and Role
 
@@ -14,7 +6,7 @@ This guide defines how library web pages should work as service content, not pro
 - Core goals:
   - Help users complete tasks quickly (hours, access, borrowing, contact, appointments).
   - Support learning and research for students, faculty, staff, and community members.
-  - Provide clear pathways to services, spaces, collections, and assistance.
+  - Provide clear paths to services, spaces, collections, and assistance.
 - Voice and framing:
   - Mission-driven, welcoming, and practical.
   - Emphasize access, inclusion, and user success.
@@ -35,31 +27,20 @@ This guide defines how library web pages should work as service content, not pro
   - what the service does
   - where/how to access it
   - constraints (hours, appointment rules, eligibility)
-- Provide direct contact options near task steps.
+- Provide contact or help options near task steps.
 - Break policy details into short subsections with informative headings.
-- For location content, include clear physical access details and alternatives.
+- For locations, provide or link to clear physical and alternative access information.
 
-## 4. Editorial QA Checklist (Service Content)
+## 4. Editorial Checklist
 
 - Headings are clear and in logical order.
 - Links are descriptive and make sense out of context.
 - Paragraphs are short enough for scanning.
 - Lists are used for steps, requirements, and options.
 - Contact, help, and feedback options are easy to find.
-- Critical task information appears above long background/context text.
+- Critical task information appears before long background/context text.
 
 ## 5. Sources and Related References
 
-1. Plain Language Guidelines (U.S. Government)
-
-- https://www.plainlanguage.gov/guidelines/
-
-2. GOV.UK Content Design: Writing for GOV.UK
-
-- https://www.gov.uk/guidance/content-design/writing-for-gov-uk
-
-3. Project references in this repository
-
-- docs/library-style-guide.md
-- docs/university-style-guide.md
-- docs/readability-style-guide.md
+1. [Plain Language Guidelines (U.S. Government)](https://www.plainlanguage.gov/guidelines/)
+2. [GOV.UK Content Design: Writing for GOV.UK](https://www.gov.uk/guidance/content-design/writing-for-gov-uk)
