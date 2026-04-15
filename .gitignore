@@ -14,8 +14,9 @@ styles/write-good/
 styles/Joblint/
 .vale/
 
-# --- Generated Reiews ---
-reviews/*__review.md
+# --- Generated Reviews ---
+*__review.md
+!tests/test-reviews/.gitkeep
 
 # --- Other ---
 *.vsix

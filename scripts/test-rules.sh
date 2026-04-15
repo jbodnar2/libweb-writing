@@ -2,12 +2,18 @@
 
 set -euo pipefail
 
-REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 TESTS_DIR="$REPO_ROOT/tests"
-TEST_REVIEWS_DIR="$REPO_ROOT/reviews/tests"
+TEST_REVIEWS_DIR="$REPO_ROOT/tests/test-reviews"
+REVIEW_SCRIPT="$REPO_ROOT/scripts/review-file.sh"
 
 if [ ! -d "$TESTS_DIR" ]; then
 	echo "Error: tests directory not found at $TESTS_DIR"
+	exit 1
+fi
+
+if [ ! -x "$REVIEW_SCRIPT" ]; then
+	echo "Error: review script not executable at $REVIEW_SCRIPT"
 	exit 1
 fi
 
@@ -16,7 +22,7 @@ mkdir -p "$TEST_REVIEWS_DIR"
 found=0
 while IFS= read -r file; do
 	found=1
-	REVIEW_OUTPUT_DIR="$TEST_REVIEWS_DIR" "$REPO_ROOT/review.sh" "$file"
+	REVIEW_OUTPUT_DIR="$TEST_REVIEWS_DIR" "$REVIEW_SCRIPT" "$file"
 done < <(find "$TESTS_DIR" -maxdepth 1 -name '*.md' ! -name '*__review.md' | sort)
 
 if [ "$found" -eq 0 ]; then

@@ -2,7 +2,7 @@
 
 This repository runs automated editorial checks for Georgia State University Library web content using [Vale](https://vale.sh/). It combines third-party style packages with custom rule sets for university naming, library naming, writing quality and readability.
 
-Generated review reports are written to the [reviews](reviews) directory.
+Generated review reports are written to [reviews](reviews) for regular content and [tests/test-reviews](tests/test-reviews) for rule-check test runs.
 
 ## What This Repo Enforces
 
@@ -29,35 +29,52 @@ Primary custom rule directories:
 2. Sync style packages:
    - `vale sync`
 3. Run a single sample review:
-   - `./review.sh /full/path/to/file.md`
+   - `./scripts/review-file.sh /full/path/to/file.md`
 4. Run all test files in [tests](tests):
-   - `./review-tests.sh`
+   - `./scripts/test-rules.sh`
 
 ## How Review Scripts Work
 
 ### Single File Review
 
-Script: [review.sh](review.sh)
+Script: [scripts/review-file.sh](scripts/review-file.sh)
 
 - Accepts a full file path.
-- Also accepts repo-relative paths and legacy paths relative to [reviews](reviews).
+- Also accepts repo-relative paths.
 - Example input: `/full/path/to/file.md`
 - Output file pattern: `<input_basename>__review.md` in [reviews](reviews)
 
 Example:
 
 ```bash
-./review.sh /full/path/to/file.md
+./scripts/review-file.sh /full/path/to/file.md
 # writes: reviews/file__review.md
 ```
 
 ### Test Sweep
 
-Script: [review-tests.sh](review-tests.sh)
+Script: [scripts/test-rules.sh](scripts/test-rules.sh)
 
 - Iterates over source `.md` files in [tests](tests)
-- Skips files already ending in `__review.md`
-- Writes output `__review.md` files into [reviews/tests](reviews/tests)
+- Writes output `__review.md` files into [tests/test-reviews](tests/test-reviews)
+
+### Test Validation Coverage
+
+The test files in [tests](tests) are intentionally written with known issues so you can verify that custom rules and configs still work after changes.
+
+- [tests/01-university-style-checks.md](tests/01-university-style-checks.md)
+  Checks: UniversityStyle.Headings, UniversityStyle.Identity, UniversityStyle.Login, UniversityStyle.Time, UniversityStyle.Technical, UniversityStyle.Exclamation, UniversityStyle.AllCaps.
+- [tests/02-library-style-checks.md](tests/02-library-style-checks.md)
+  Checks: LibraryStyle.Naming, LibraryStyle.Locations.
+- [tests/03-writing-quality-checks.md](tests/03-writing-quality-checks.md)
+  Checks: WritingQualityStyle.Commas, WritingQualityStyle.Grammar, WritingQualityStyle.Jargon, WritingQualityStyle.LinkText, WritingQualityStyle.Punctuation, WritingQualityStyle.Quotes.
+- [tests/04-readability-checks.md](tests/04-readability-checks.md)
+  Checks: ReadabilityStyle.SentenceLength, ReadabilityStyle.SentenceLengthHighRisk, ReadabilityStyle.ParagraphLength.
+
+Notes:
+
+- Test files are synthetic and are not expected to be style-compliant.
+- Keep test source files in version control as a regression set.
 
 ## Configuration
 
