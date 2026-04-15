@@ -3,5 +3,6 @@ message: "Library Style: Use '%s'."
 level: warning
 ignorecase: false
 swap:
-  the library: the Library
+  The Library: The library
+  the Library: the library
   Library South building: library building

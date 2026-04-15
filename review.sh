@@ -2,34 +2,53 @@
 
 set -euo pipefail
 
-# Verify content filename provided
+REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
+DEFAULT_REVIEWS_DIR="$REPO_ROOT/reviews"
+MAIN_CONFIG="$REPO_ROOT/.vale.ini"
+READABILITY_CONFIG="$REPO_ROOT/.vale-readability.ini"
+ALERTS_TEMPLATE="$REPO_ROOT/styles/config/templates/alerts.tmpl"
+OUTPUT_DIR="${REVIEW_OUTPUT_DIR:-$DEFAULT_REVIEWS_DIR}"
+
+# Verify content filename provided.
 if [ $# -eq 0 ]; then
     echo "Please provide a file for review: ./review.sh <content-file>"
+    echo "Example: ./review.sh /full/path/to/file.md"
     exit 1
 fi
 
-# Construct the input file path
-FILENAME=$1
-REVIEWS_PATH="./reviews/"
-INPUT_FILE="$REVIEWS_PATH$FILENAME"
+INPUT_ARG="$1"
+INPUT_FILE=""
 
+# Accept a full path, a repo-relative path, or a legacy reviews-relative path.
+if [ -f "$INPUT_ARG" ]; then
+    INPUT_FILE="$(cd "$(dirname "$INPUT_ARG")" && pwd)/$(basename "$INPUT_ARG")"
+elif [ -f "$REPO_ROOT/$INPUT_ARG" ]; then
+    INPUT_FILE="$REPO_ROOT/$INPUT_ARG"
+elif [ -f "$DEFAULT_REVIEWS_DIR/$INPUT_ARG" ]; then
+    INPUT_FILE="$DEFAULT_REVIEWS_DIR/$INPUT_ARG"
+fi
 
-# Does the file exist
-if [ ! -f "$INPUT_FILE"  ]; then
+# Does the file exist.
+if [ -z "$INPUT_FILE" ] || [ ! -f "$INPUT_FILE" ]; then
     echo ""
     echo "-----"
-    echo "Error: '$INPUT_FILE' does not exist."
+    echo "Error: could not find input file '$INPUT_ARG'."
     echo ""
-    echo "Available files:"
-    ls -1 "$REVIEWS_PATH" | sed 's/^/ - /'
+    echo "Accepted formats:"
+    echo " - Full path to a file"
+    echo " - Path relative to repo root"
+    echo " - Legacy path relative to ./reviews"
     echo "-----"
     echo ""
     exit 1
 fi
 
-# Generate the review filename (<base_filename>__reivew.md)
-REVIEW_FILE="$REVIEWS_PATH$(basename "$INPUT_FILE" .md)__review.md"
-ALERTS_TEMPLATE="styles/config/templates/alerts.tmpl"
+mkdir -p "$OUTPUT_DIR"
+
+# Generate the review filename (<base_filename>__review.md).
+INPUT_BASENAME="$(basename "$INPUT_FILE")"
+INPUT_STEM="${INPUT_BASENAME%.*}"
+REVIEW_FILE="$OUTPUT_DIR/${INPUT_STEM}__review.md"
 
 READABILITY_TMP=$(mktemp)
 STYLE_TMP=$(mktemp)
@@ -41,9 +60,10 @@ cleanup() {
 trap cleanup EXIT
 
 echo "Reviewing $INPUT_FILE"
+echo "Writing review to $REVIEW_FILE"
 
 # Collect base text metrics from Vale.
-METRICS_JSON=$(vale ls-metrics "$INPUT_FILE")
+METRICS_JSON=$(vale --config="$MAIN_CONFIG" ls-metrics "$INPUT_FILE")
 
 WORDS=$(printf '%s\n' "$METRICS_JSON" | awk -F': ' '/"words"/{gsub(/,/,"",$2); print $2}')
 SENTENCES=$(printf '%s\n' "$METRICS_JSON" | awk -F': ' '/"sentences"/{gsub(/,/,"",$2); print $2}')
@@ -66,13 +86,13 @@ else
 fi
 
 # Readability-focused alerts only (long sentences/paragraph density).
-vale --config=".vale-readability.ini" --output="$ALERTS_TEMPLATE" "$INPUT_FILE" > "$READABILITY_TMP" || true
+vale --config="$READABILITY_CONFIG" --output="$ALERTS_TEMPLATE" "$INPUT_FILE" > "$READABILITY_TMP" || true
 if ! grep -q '[^[:space:]]' "$READABILITY_TMP"; then
     echo "- No readability issues found." > "$READABILITY_TMP"
 fi
 
 # Style and mechanics alerts from the main rule set.
-vale --output="$ALERTS_TEMPLATE" "$INPUT_FILE" > "$STYLE_TMP" || true
+vale --config="$MAIN_CONFIG" --output="$ALERTS_TEMPLATE" "$INPUT_FILE" > "$STYLE_TMP" || true
 
 if ! grep -q '[^[:space:]]' "$STYLE_TMP"; then
     echo "- No style/mechanics issues found." > "$STYLE_TMP"

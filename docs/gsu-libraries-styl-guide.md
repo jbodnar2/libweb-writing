@@ -1,11 +1,5 @@
 # GSU Libraries Style Guide (Consolidated)
 
-## When to Use This File
-
-- Use this first for library-specific naming, addresses, floors, and service-page standards.
-- Use this when reports flag checks such as LibraryStyle.Naming, LibraryStyle.Locations, UniversityStyle.Time, and UniversityStyle.Login.
-- Use this to resolve GSU library exceptions that are more specific than general writing guidance.
-
 ## 1. University & Library Identity
 
 - Official Name: Use "Georgia State University Library" on first reference.
@@ -14,7 +8,7 @@
 
 ## 2. Punctuation & Typography
 
-- Oxford Comma: Do not use. (e.g., _books, journals and databases_). See the [GSU Writer's Style Guide](./university-style-guide.md).
+- Oxford Comma: Do not use. (e.g., _books, journals and databases_). See the [GSU Writer's Style Guide](./gsu-style-guide.md).
 - Ampersand (&): Use only in headers, menus, or official titles (e.g., _Special Collections & Archives_). Always use and in body text.
 - Quotations: Use "double quotes" for primary quotes and 'single quotes' for quotes within quotes. Punctuation belongs inside the quotation marks.
 - Emphasis: Never underline text (reserved for links). Use bold sparingly. Avoid ALL CAPS.
