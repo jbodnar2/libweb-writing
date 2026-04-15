@@ -1,5 +1,11 @@
 # GSU Libraries Style Guide (Consolidated)
 
+## When to Use This File
+
+- Use this first for library-specific naming, addresses, floors, and service-page standards.
+- Use this when reports flag checks such as Library.Naming, Library.Locations, Library.Time, and Library.Login.
+- Use this to resolve GSU library exceptions that are more specific than general writing guidance.
+
 ## 1. University & Library Identity
 
 - Official Name: Use "Georgia State University Library" on first reference.

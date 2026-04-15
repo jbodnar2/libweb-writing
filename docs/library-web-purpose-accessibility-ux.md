@@ -1,5 +1,11 @@
 # Library Website Purpose, Accessibility, and UX Guide (Consolidated)
 
+## When to Use This File
+
+- Use this first when reviewing content purpose, user task flow, accessibility expectations, and usability quality.
+- Use this when report findings suggest unclear structure, weak link text, missing accessibility support, or non-task-oriented writing.
+- Use this with readability guidance for pages that are both dense and difficult to navigate.
+
 This guide summarizes the purpose of the library website and practical accessibility/UX standards for public-facing web content.
 
 ## 1. Website Purpose and Role

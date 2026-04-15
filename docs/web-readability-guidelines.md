@@ -1,5 +1,11 @@
 # Web Readability Guidelines (Sentence and Paragraph Length)
 
+## When to Use This File
+
+- Use this first when reports show readability and scanning findings.
+- Use this when checks from LibraryReadability.SentenceLength or LibraryReadability.ParagraphLength appear.
+- Use this to decide whether a warning is a true readability issue or acceptable due to necessary specificity.
+
 This reference summarizes practical readability targets for public-facing web content in this project.
 
 ## 1. Sentence Length
