@@ -5,5 +5,7 @@ ignorecase: true
 swap:
   Internet: internet
   Website: website
+  E-mail: Email
+  e-mail: email
   Healthcare: healthcare
   Coronavirus: coronavirus

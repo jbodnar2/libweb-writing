@@ -1,0 +1,6 @@
+extends: occurrence
+message: "Readability: Sentences over 30 words are high-risk for web scanning."
+scope: sentence
+level: warning
+max: 30
+token: \b(\w+)\b

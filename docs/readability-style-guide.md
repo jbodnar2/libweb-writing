@@ -3,7 +3,7 @@
 ## When to Use This File
 
 - Use this first when reports show readability and scanning findings.
-- Use this when checks from LibraryReadability.SentenceLength or LibraryReadability.ParagraphLength appear.
+- Use this when checks from ReadabilityStyle.SentenceLength, ReadabilityStyle.SentenceLengthHighRisk, or ReadabilityStyle.ParagraphLength appear.
 - Use this to decide whether a warning is a true readability issue or acceptable due to necessary specificity.
 
 This reference summarizes practical readability targets for public-facing web content in this project.
@@ -11,8 +11,8 @@ This reference summarizes practical readability targets for public-facing web co
 ## 1. Sentence Length
 
 - Recommended average sentence length: 15-20 words.
-- Suggested warning threshold: 25+ words.
-- High-risk threshold for web scanning: 30+ words.
+- Suggested threshold: 25+ words.
+- High-risk warning threshold for web scanning: 30+ words.
 
 Why:
 
@@ -37,7 +37,8 @@ Why:
 
 ## 4. Recommended Project Defaults
 
-- Sentence warnings: 25+ words.
+- Sentence suggestion: 25+ words.
+- Sentence warning: 30+ words.
 - Paragraph suggestion: 100+ words.
 - Paragraph warning: 140+ words.
 
