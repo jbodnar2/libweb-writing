@@ -1,0 +1,29 @@
+# Sentences
+extends: existence
+message: "Long sentence detected: This construction is harder to scan on screens. Try to break it up."
+level: suggestion
+scope: sentence
+raw: \b(?:\w+\b\W*){26,}
+
+---
+extends: existence
+message: "Sentence length exceeds 30-word limit: This length significantly impacts mobile accessibility."
+level: warning
+scope: sentence
+raw: \b(?:\w+\b\W*){31,}
+
+
+# Paragraphs
+---
+extends: existence
+message: "Paragraph density: This may appear as a 'wall of text' on mobile devices."
+level: suggestion
+scope: paragraph
+raw: (?s)\b(?:\w+\b\W*){61,}
+
+---
+extends: existence
+message: "Paragraph length exceeds 100-word limit: Research shows users often skip paragraphs this long."
+level: warning
+scope: paragraph
+raw: (?s)\b(?:\w+\b\W*){101,}

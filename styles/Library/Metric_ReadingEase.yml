@@ -1,0 +1,6 @@
+extends: metric
+message: "Flesch Reading Ease: %s (Target 70 or higher)"
+level: suggestion
+formula: |
+  206.835 - (1.015 * (words / sentences)) - (84.6 * (syllables / words))
+condition: "< 1000"

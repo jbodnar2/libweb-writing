@@ -800,3 +800,87 @@ As you collect these, I suggest creating a table with four columns for every ter
 | Unit     | Special Collections & Archives | The archives                    | Spec Coll                |
 
 **Would you like me to take one of these specific categories and generate a "Starter List" of common library terms that usually need standardization?**
+
+For an academic library website, the goal is to balance **intellectual authority** with **service accessibility**. While your users are scholars and students, they are also users in a hurry who scan the web for quick answers (e.g., "How do I renew a book?" or "Where is the special collections room?").
+
+### 1. Recommended Readability Metrics
+
+The **Flesch-Kincaid Grade Level** is the industry standard and most compatible with Vale, but it should be supplemented with **Sentence/Paragraph length** for better web performance.
+
+| Metric                         | Target Score   | Purpose                                                                                         |
+| :----------------------------- | :------------- | :---------------------------------------------------------------------------------------------- |
+| **Flesch-Kincaid Grade Level** | **8.0 – 10.0** | Ensures content is accessible to freshmen and the general public, while remaining professional. |
+| **Flesch Reading Ease**        | **60 – 70**    | Aim for "Standard" difficulty. Anything below 50 is too "academic" for a website.               |
+| **Sentence Length**            | **< 25 words** | Crucial for "scannability." Long sentences are where web users drop off.                        |
+| **Paragraph Length**           | **< 50 words** | On mobile devices, a 100-word paragraph looks like a "wall of text."                            |
+
+### 2. Tailoring Targets by Content Type
+
+Not every page in a library needs the same score. You should adjust your targets based on the "intent" of the page.
+
+- **Service & Help Pages (e.g., "How to Print", "Borrowing Rules"):**
+  - **Target:** Grade 7–8.
+  - **Reason:** These are functional instructions. Users are often stressed or in a rush; the language should be invisible.
+- **Research Guides & Subject Pages:**
+  - **Target:** Grade 10–12.
+  - **Reason:** These deal with complex academic concepts and specific terminology. It is okay to use "disciplinary" language here, but avoid "bureaucratic" language.
+- **Special Collections & About Pages:**
+  - **Target:** Grade 9–10.
+  - **Reason:** These pages often tell a story or describe history. A slightly higher level allows for more descriptive, narrative prose.
+
+### 3. Critical "Academic Library" Style Tips
+
+Writing for a library often involves specific traps that hurt readability scores. You can use Vale rules to catch these specifically:
+
+- **Eliminate "Library-ese":** Words like _Boolean_, _Consortium_, _Monograph_, and _Interlibrary Loan_ are jargon to a freshman.
+  - _Vale Tip:_ Use an `existence` rule to flag these and suggest simpler terms (e.g., "Book" instead of "Monograph").
+- **Front-load Information:** Put the most important word at the start of the heading.
+  - _Bad:_ "Instructions for accessing the database via Proxy."
+  - _Good:_ "Database Proxy Access."
+- **The "One-Idea" Rule:** Ensure every paragraph only handles one service or one resource. If a paragraph mentions "Printing" and "Scanning," split it.
+
+### 4. How to implement this in Vale
+
+Since you are working with Vale templates, you could set up your `.tmpl` to report different "Success" statuses based on these targets.
+
+> **Example Logic:**
+>
+> - If `FleschKincaid` < 10.0 $\rightarrow$ **PASS**
+> - If `FleschKincaid` > 10.0 and < 12.0 $\rightarrow$ **NEEDS REVIEW** (Academic content)
+> - If `FleschKincaid` > 12.0 $\rightarrow$ **FAIL** (Too complex for web)
+
+Would you like a Vale `existence` rule specifically designed to catch common "Library Jargon" to help keep your scores in that 8–10 range?
+
+The choice of **60** and **100** words for paragraph length is based on how humans process text on a digital screen versus a printed page. These numbers represent the "tipping points" where a reader's eyes begin to tire or skip ahead.
+
+### 1. The "Mobile Wall" (60 Words)
+
+On a standard smartphone, a 60-word paragraph takes up nearly half the screen.
+
+- **The Psychology:** When a user scrolls and sees a block of text that fills the entire viewport, it creates "cognitive friction." They perceive the information as a chore to read.
+- **The Library Context:** If a student is checking "Library Hours" or "Room Bookings" on their phone while walking to the building, 60 words is the maximum they can comfortably scan in one glance.
+
+### 2. The "Scanning Threshold" (100 Words)
+
+On a desktop monitor, 100 words is where a paragraph officially becomes a "large block."
+
+- **F-Shaped Reading Pattern:** Most web users read in an "F" pattern—they read the first line, scan the middle, and then skip to the next heading. If a paragraph is 100+ words, the middle of that paragraph becomes a "dead zone" where important details go to die.
+- **The Warning:** Setting a warning at 100 words forces you to break up ideas. In an academic library context, this prevents you from burying the "Call to Action" (like a link to a database) inside a long historical explanation.
+
+### 3. Comparison of Targets
+
+Here is how those numbers compare to standard writing styles:
+
+| Length           | Impression       | Best Use Case                                   |
+| :--------------- | :--------------- | :---------------------------------------------- |
+| **15–40 words**  | Punchy / Clear   | Step-by-step instructions, service alerts.      |
+| **40–60 words**  | Standard Web     | General descriptions, about sections.           |
+| **60–100 words** | Dense / Academic | In-depth research guide explanations.           |
+| **100+ words**   | Wall of Text     | Avoid on the web; better suited for print PDFs. |
+
+### Summary of the Tiered Strategy
+
+- **The 60-word Suggestion:** This is a "Yellow Light." It tells the writer: "This looks fine on a laptop, but check how it looks on a phone."
+- **The 100-word Warning:** This is a "Red Light." It tells the writer: "Even a motivated researcher will likely skim or skip this. You are losing your audience."
+
+By using these specific numbers, you are training your staff to write for the **medium** (the screen) rather than the **subject** (the library).
