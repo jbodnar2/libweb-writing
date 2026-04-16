@@ -46,3 +46,81 @@ See the full [Writer's Style Guide](https://commkit.gsu.edu/writers-style-guide/
 - The "You" Perspective: Speak directly to the reader using "you" and "your." Refer to the institution as "we" or "our."
 - Inverted Pyramid: Put the most important "who, what, where, and why" in the first paragraph.
 - Scannability: Use short paragraphs and bulleted lists. Avoid "Welcome" messages or fluff introductions.
+
+TODO: Review below and above and concolidate for master list
+
+# University Style Guide
+
+## 1. University Identity and Campus Names
+
+- Full Name: Use Georgia State University on the first mention.
+- Secondary References: Use Georgia State, GSU, or the university (lowercase u).
+- Headlines / Page Titles: Never use GSU in these contexts.
+- Exception: GSU is acceptable on first reference for social media and Athletics contexts only.
+- Campus Designations: Use Atlanta Campus, Alpharetta Campus, Buckhead Center, Dunwoody Campus, etc.
+- Perimeter College: Refer to Perimeter College campuses for associate-degree contexts and use Pathways for related coursework.
+
+## 2. Academic Degrees and Programs
+
+- General Usage: Spell out and use lowercase for general references to associate degrees, bachelor’s degrees, master’s degrees, doctor’s degrees or doctorates.
+- Doctoral Distinction: You can receive a doctorate or a doctor’s degree, but never use the term doctoral degree.
+- Official Names: Capitalize official names of degrees (Bachelor of Science in Nursing) but lowercase majors when referenced generally.
+- Abbreviations: Capitalize each letter and follow with a period (B.A., B.F.A., B.I.S., J.D., M.P.H., M.S., M.S.W., M.S.I.A.).
+- Abbreviation Exceptions: Do not use periods for LL.M., MBA, M.Ed., or Ph.D.
+- Doctor Title: Use Dr. only for M.D., D.O., or terminal medical degrees on the first reference. For academic doctorates, state that the individual holds a doctorate.
+
+## 3. Alumni Credentials and Terminology
+
+- Alumni Credentials: Follow a person’s name with parentheses containing the degree abbreviation and the last two digits of the graduation year (Randy Patterson (B.B.A. ’98)).
+- Apostrophe Rule: The apostrophe must point down and left; do not place a comma between the year and the degree.
+- Multiple Degrees: List GSU degrees in chronological order, separated by commas.
+- Gender Terminology: Use alumna (one woman), alumnae (women), alumnus (one man), or alumni (men or mixed group).
+- Conversational Use: Alum and alums are acceptable for gender-neutral or informal contexts.
+
+## 4. Digital, Web and Technical Mechanics
+
+- Log In / Login: Use log in as a verb (please log in to the portal) and login as a noun or adjective (enter your login credentials).
+- Phrasal Verbs: Use log in or log out. Never use log on, log onto, or log into.
+- Standard Terms: Use email (one word, no hyphen), website (one word, lowercase), webpage (one word), and internet/intranet (always lowercase).
+- Account Names: CampusID (one capitalized word), PantherCard, and PantherCash (no spaces).
+- URL Formatting: Use the root domain and path only (news.gsu.edu). Omit http://, https://, www., and leading or trailing slashes.
+- URL Shortening: Delete everything between the domain/subdomain and the final directory part for GSU links.
+- Links: Use descriptive text only; never use click here or read more.
+
+## 5. Editorial Style and Punctuation
+
+- Time: Use a.m. and p.m. (lowercase with periods). Omit :00 for top-of-the-hour times (9 a.m.). Use noon and midnight.
+- Time Zones: Place the abbreviation immediately after the time without commas or parentheses (10 a.m. EST).
+- Date Spans: Use a hyphen or en dash with no spaces (Oct. 1–15).
+- Oxford Comma: Generally omitted in university text (red, white and blue).
+- Emphasis: Never use underlining or all caps for emphasis; use bold instead.
+- Numbers: Use No. before a numeral for rankings (Ranked No. 1). Use the pound sign (#) only for hashtags.
+
+## 6. Atlanta Addresses and Street Names
+
+- Formal Names: Spell out and capitalize formal names of streets.
+- Abbreviations: Use Ave., Blvd., or St. only when used with a specific house number.
+- Directionals: Always include the directional suffix for Atlanta addresses (NE, SE, SW, NW).
+- Metro Atlanta: Use metro Atlanta (lowercase, never hyphenated).
+
+## 7. Inclusive Language and Sensitivities
+
+- Student References: Use first-year student or first-year applicant instead of freshman (except for Freshman Learning Communities). Avoid upperclassman and underclassman.
+- Gender-Neutrality: Use the singular their for unnamed individuals (never his or her).
+- LGBTQ+: Include details only if pertinent and disclosed. Avoid sexual preference and homosexual. Avoid non-standard pronouns (hir/xe/zir) unless central to the story.
+- Disabilities: Ask the subject for their preference. Use neutral factual language and avoid terms like afflicted with, victim of, or able-bodied.
+- Honors: Capitalize Honors when referring to the Honors College, its courses, or programs. Lowercase for general distinctions (magna cum laude).
+
+## 8. Tone, Health and Word Usage
+
+- Voice: Prefer active voice and use the you perspective.
+- Structure: Use the inverted pyramid style (most important information in the first paragraph).
+- Health Care: Use as two words (health care) unless part of a proper noun like Children’s Healthcare of Atlanta.
+- Pandemic Terms: Use COVID-19 (all caps, hyphen) and coronavirus (lowercase).
+- Variants: Use lowercase Greek letters (delta, omicron, etc.).
+- CDC: Spell out Centers for Disease Control and Prevention on first reference; use CDC thereafter.
+- Word Choice:
+  - Adviser: Use the -er spelling.
+  - Quantities: Use more than instead of over for numbers.
+  - Distance: Use farther for physical distance and further for metaphorical progress.
+  - Regardless: Never use irregardless.
