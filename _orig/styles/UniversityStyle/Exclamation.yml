@@ -1,0 +1,6 @@
+extends: existence
+message: "GSU Style: Avoid exclamation points in formal web content unless clearly justified."
+level: suggestion
+nonword: true
+tokens:
+  - "!"

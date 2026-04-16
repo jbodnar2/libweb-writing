@@ -1,0 +1,11 @@
+{{- range .Files }}
+{{- if .Alerts }}
+{{- range .Alerts }}
+- **Line {{ .Line }}**: [{{ .Severity }}] *{{ .Check }}*
+  - **Found**: `{{ .Match }}`
+  - **Issue**: {{ .Message }}
+{{- end }}
+{{- else }}
+No issues found.
+{{- end }}
+{{ end }}
