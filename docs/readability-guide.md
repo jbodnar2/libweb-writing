@@ -1,31 +1,44 @@
-# Readability Guide
+# Revised Readability & Structure Guide: Quick Reference
 
-Readability targets for public-facing web content.
+## 1. Sentence Complexity
 
-## 1. Sentence Length
+To reduce cognitive load and improve scannability, prioritize short, direct statements.
 
-Recommended average sentence length: 25 words or less.
+- **Target**: Average sentence length of **25 words or less**.
+- **Complexity Alert (25+ words)**: Sentences of this length risk losing the reader's attention. Break them into two separate thoughts.
+- **Accessibility Warning (35+ words)**: Sentences this long create a significant barrier for multilingual learners and mobile users. They must be simplified or divided.
+- **Action**: Look for "and," "but," or "which" as natural points to insert a period.
 
-- Shorter sentences improve scanning, comprehension, and task completion on web pages.
-- Longer sentences increase cognitive load, especially for mobile users and multilingual audiences.
+## 2. Paragraph Density
 
-## 2. Paragraph Length
+Web users scan content in "chunks." Dense blocks of text—often called "walls of text"—are frequently skipped by users in a hurry.
 
-Recommended average paragfraph length: 100 words or less; 5 sentences or less.
+- **Target**: Average paragraph length of **60 words or less**.
+- **Density Alert (60+ words)**: The paragraph is becoming visually intimidating. Consider adding a line break to introduce white space.
+- **Wall of Text Warning (100+ words)**: Research indicates users often skip blocks of this size entirely. These must be broken into smaller, manageable ideas or converted into a list.
 
-- Web users scan in chunks, not dense blocks.
-- Shorter paragraphs improve legibility and help users locate key actions and information faster.
+## 3. Readability Scoring (Flesch-Kincaid)
 
-## 3. Accessibility and Compliance Note
+We use the Flesch-Kincaid Grade Level and Reading Ease formulas to audit the "weight" of our prose.
 
-- There is no WCAG requirement for sentence or paragraph length.
-- Recommendations are readability and usability targets, not strict accessibility compliance requirements.
+- **Target Grade Level**: **10.0 or lower**.
+  - _Note_: While Grade 8 is the general web standard, the Library allows up to Grade 10 to accommodate necessary academic terminology (e.g., "authentication," "interdisciplinary").
+- **Reading Ease Target**: **60 or higher**.
+- **Strategy**: If your score is too high, do not necessarily remove technical library terms. Instead, **shorten the sentences** surrounding those terms to balance the mathematical weight.
 
-## 4. Recommended Lenghts
+## 4. Scannability Tools
 
-These values assume for public service pages, policy pages, and instructional pages where clarity and scanning are important.
+If a paragraph or sentence is flagged for length, use these formatting alternatives:
 
-## 5. Sources
+- **Bullet Points**: Use for lists of three or more items (services, requirements, or locations).
+- **Numbered Lists**: Use for step-by-step instructions (e.g., "How to place an ILL request").
+- **Descriptive Subheaders**: Use H3 or H4 headers to label sections so users can jump to the information they need.
 
-1. [U.S. Federal Plain Language Guidelines](https://www.plainlanguage.gov/guidelines/)
-2. [GOV.UK Content Design: Writing for GOV.UK](https://www.gov.uk/guidance/content-design/writing-for-gov-uk)
+## 5. Summary of Institutional Metrics
+
+| Metric               | Target (Library Standard) | Threshold for Warning        |
+| :------------------- | :------------------------ | :--------------------------- |
+| **Sentence Length**  | 20–25 words               | 35+ words                    |
+| **Paragraph Length** | 40–60 words               | 100+ words                   |
+| **Grade Level**      | 8.0 – 10.0                | 12.0+ (Graduate level)       |
+| **Reading Ease**     | 60 – 70                   | 30 or lower (Very difficult) |

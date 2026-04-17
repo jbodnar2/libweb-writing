@@ -1,46 +1,46 @@
-# Library Website Content Guide
+# Library Website Content Guide: Quick Reference
 
-## 1. Website Purpose and Role
+## 1. Core Purpose: Service Over Promotion
 
-- The library website should function as a service platform, not just a promotional brochure.
-- Core goals:
-  - Help users complete tasks quickly (hours, access, borrowing, contact, appointments).
-  - Support learning and research for students, faculty, staff, and community members.
-  - Provide clear paths to services, spaces, collections, and assistance.
-- Voice and framing:
-  - Mission-driven, welcoming, and practical.
-  - Emphasize access, inclusion, and user success.
+The library website is a functional service platform. All content must help users complete a specific task or find essential information.
 
-## 2. Usability Principles for Library Pages
+- **Task-Critical First**: Place the most important information (hours, location, eligibility) at the top of the page.
+- **Action-Oriented**: Focus on what the user can **do** (e.g., "Borrow a Laptop") rather than describing the department (e.g., "About the Technology Desk").
+- **Welcoming Tone**: Maintain a professional yet helpful "instructor-like" voice.
 
-- Put task-critical content first (what users need now).
-- Use clear, descriptive headings and short sections.
-- Use plain language and scannable chunks.
-- Keep navigation and labels consistent across pages.
-- Use descriptive links (avoid vague link text).
-- Prefer action-oriented calls to action for service tasks.
+## 2. Structural Standards for Scannability
 
-## 3. Content Patterns for Service Pages
+Users scan library pages in "F-patterns" rather than reading every word. Structure your content to support this behavior.
 
-- Start with key service facts:
-  - who the service is for
-  - what the service does
-  - where/how to access it
-  - constraints (hours, appointment rules, eligibility)
-- Provide contact or help options near task steps.
-- Break policy details into short subsections with informative headings.
-- For locations, provide or link to clear physical and alternative access information.
+- **Headings**: Use descriptive, H2 and H3 subheaders to label every section.
+- **Paragraphs**: Keep paragraphs under **60 words**. Break any block exceeding 100 words.
+- **Sentences**: Aim for **25 words or fewer**.
+- **Lists**: Use bulleted lists for any group of three or more items (e.g., requirements, services, or equipment). Use numbered lists for step-by-step instructions.
 
-## 4. Editorial Checklist
+## 3. The "Service Page" Pattern
 
-- Headings are clear and in logical order.
-- Links are descriptive and make sense out of context.
-- Paragraphs are short enough for scanning.
-- Lists are used for steps, requirements, and options.
-- Contact, help, and feedback options are easy to find.
-- Critical task information appears before long background/context text.
+Every service-oriented page (e.g., ILL, CURVE, Desktop Delivery) must follow this hierarchy:
 
-## 5. Sources and Related References
+1.  **Summary**: One or two sentences defining the service and who can use it.
+2.  **Access Action**: A clear link or button to start the process (e.g., "Log in to ILLiad").
+3.  **Requirements**: Bulleted list of eligibility or constraints (e.g., "Available to faculty and grad students").
+4.  **How-To**: Brief, numbered steps for using the service.
+5.  **Help**: Contact information or a "Chat with us" link located immediately after the instructions.
 
-1. [Plain Language Guidelines (U.S. Government)](https://www.plainlanguage.gov/guidelines/)
-2. [GOV.UK Content Design: Writing for GOV.UK](https://www.gov.uk/guidance/content-design/writing-for-gov-uk)
+## 4. Link and Navigation Standards
+
+- **Descriptive Links**: Link text must be understandable out of context.
+  - **Yes**: [View Graduate Study Room Policies]
+  - **No**: [Click here] or [Learn more]
+- **Button Usage**: Use buttons for primary actions (e.g., "Make an Appointment") and text links for secondary information.
+- **Internal Consistency**: Use the official names of departments and tools found in the **LibraryStyle** guide.
+
+## 5. Editorial Checklist (Pre-Publishing)
+
+Before running the Vale linter or publishing a page, verify the following:
+
+- [ ] **The "Five-Second" Rule**: Can a user identify the page's purpose within five seconds?
+- [ ] **The "Above the Fold" Check**: Is the critical task-completion info visible without scrolling?
+- [ ] **Formatting**: Are there any "walls of text" that should be lists?
+- [ ] **Accessibility**: Does every image have meaningful alt text? (Refer to the **Accessibility Guide**).
+- [ ] **Hierarchy**: Is there exactly one H1, followed by logical H2/H3 levels?

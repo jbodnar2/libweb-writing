@@ -1,54 +1,44 @@
-# Accessibility & Alt Text Guide
+# Accessibility & Alt Text Guide: Quick Reference
 
-## 1. Accessibility Expectations
+## 1. Heading Hierarchy
 
-- Target WCAG 2.2 AA compliance for page content and interactions.
-- Ensure content is perceivable, operable, understandable, and robust.
-- Prioritize:
-  - Sufficient color contrast.
-  - Correct heading hierarchy.
-  - Meaningful link text.
-  - Text alternatives for non-text content.
-  - Clear form labels and error instructions.
-  - Keyboard accessibility for all controls.
+- **Sequential Order**: Never skip heading levels (e.g., do not jump from H2 to H4).
+- **Single H1**: Each page must have exactly one H1, typically the page title.
+- **Structural Use**: Do not use bold text to "fake" a heading; use the proper HTML/Markdown header tag.
 
-## 2. Image and Alt Text Guidance
+## 2. Meaningful Link Text
 
-### 2.1 When alt text is required
+- **Descriptive Action**: Link text must describe the destination or the action.
+  - **Yes**: [Download the Floor Map (PDF)] or [Search the Library Catalog]
+  - **No**: [Click here], [Read more], or [Link]
+- **Unique Text**: Avoid having multiple links on the same page with the same text that point to different destinations.
+- **File Types**: If a link opens a file (PDF, Excel), include the file type in the link text.
 
-- Informative images: provide concise, meaningful alt text.
-- Functional images (icons/buttons that trigger actions): alt text should describe the action.
-- Complex images (charts/diagrams/maps): provide short alt text plus nearby text summary.
+## 3. Image Alt Text
 
-### 2.2 When to use empty alt text
+- **Informative Images**: Provide a concise description of the information the image conveys.
+- **Functional Images**: For images that act as buttons or links, the alt text must describe the **action**, not the appearance.
+  - **Yes**: `alt="Search"`
+  - **No**: `alt="Magnifying glass icon"`
+- **Decorative Images**: Use empty alt text (`alt=""`) for purely decorative elements (e.g., flourish lines or background textures).
+- **Prohibited Phrases**: Do not start alt text with "Image of," "Picture of," or "Photo of."
+- **File Names**: Never use file names (e.g., `img_1234.jpg`) as alt text.
 
-- Decorative images that add no informational value should use empty alt text (`alt=""`).
-- Do not repeat nearby visible text in alt text.
+## 4. Complex Images (Charts & Maps)
 
-### 2.3 Alt text quality rules
+- **Two-Part Requirement**: Complex visuals require a short alt text identifier AND a full text description immediately nearby.
+  - **Alt text**: "Map of Atlanta Campus Library floors; see text below for detailed directory."
+  - **Nearby Text**: Provide a list of locations for each floor.
 
-- Describe purpose and meaning, not every visual detail.
-- Be concise (typically one short phrase or sentence).
-- Avoid starting with "Image of" or "Picture of" unless needed for meaning.
-- For linked images, describe destination/action (for example, "View library hours").
+## 5. Color and Contrast
 
-### 2.4 Common mistakes to avoid
+- **Color as Meaning**: Never use color as the _only_ way to convey information.
+  - **Yes**: "Required fields are marked in red and with an asterisk (\*)."
+  - **No**: "Click the red button to delete."
+- **Contrast**: Ensure text has a contrast ratio of at least 4.5:1 against its background.
 
-- Missing alt on meaningful images.
-- File names used as alt text.
-- Keyword stuffing in alt text.
-- Redundant alt text that duplicates adjacent captions/headings.
+## 6. Readability and Layout
 
-## 3. Accessibility QA Checklist (Editorial)
-
-- Heading order is logical and complete.
-- Link text is descriptive and clear out of context.
-- Images have correct alt treatment (informative vs decorative).
-- Form labels and instructions are clear.
-- Contact/help paths are easy to find for blocked tasks.
-
-## 4. Sources and Related References
-
-1. [WCAG 2.2 (W3C)](https://www.w3.org/TR/WCAG22/)
-2. [WAI Images Tutorial (W3C)](https://www.w3.org/WAI/tutorials/images/)
-3. [WAI Alt Decision Tree (W3C)](https://www.w3.org/WAI/tutorials/images/decision-tree/)
+- **Scannability**: Use bulleted or numbered lists for three or more items.
+- **Caps**: Avoid ALL CAPS for emphasis; it is difficult for users with dyslexia to read and may be read letter-by-letter by screen readers.
+- **Underlining**: Do not underline text unless it is a functional hyperlink.

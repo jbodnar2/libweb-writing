@@ -1,40 +1,40 @@
-# Library Style Guide
+# Library Style Guide: Quick Reference
 
-## 1. University & Library Identity
+## 1. Library Identity
 
-- Official Name: Use "Georgia State University Library" on first reference.
-- Secondary Reference: Use "the library" (lowercase "l") after first reference, parallel to "the university" in university-wide guidance. Capitalize only when part of a formal name (e.g., "Georgia State University Library," "Library North," "Library South").
-- Campus Designations: Use Atlanta Campus and Perimeter Campuses to differentiate information.
+- **Official Name**: "Georgia State University Library."
+- **Secondary Reference**: Use "the library" (lowercase "l").
+- **Campus Differentiators**: Use "Atlanta Campus" or "Perimeter Campuses" when specifying location-based services.
 
-## 2. Punctuation & Typography
+## 2. Locations & Addresses
 
-- Oxford Comma: Do not use. (e.g., _books, journals and databases_). See the [GSU Writer's Style Guide](./university-style-guide.md).
-- Ampersand (&): Use only in headers, menus, or official titles (e.g., _Special Collections & Archives_). Always use "and" in body text.
-- Quotations: Use "double quotes" for primary quotes and 'single quotes' for quotes within quotes. Punctuation belongs inside the quotation marks.
-- Emphasis: Never underline text (reserved for links). Use bold sparingly. Avoid ALL CAPS.
-
-## 3. Numbers & Currency
-
-- General Use: Use numerals (5) for all numbers.
-  - Exception: Spell out the number if it is the first word in a sentence.
-- Money: Always use numerals with the currency symbol (e.g., $1, $10.50).
-- Rankings: Use No. instead of the "#" symbol (e.g., _Ranked No. 1_).
-
-## 4. Locations, Addresses & Floors
-
-- Official Address: Write street names in full with directionals (no periods, no preceding comma).
-  - _Example:_ 100 Decatur Street SE.
-  - _Note:_ Use "100" for both Library North and Library South downtown.
-- Building Names:
+- **Building Names**:
   - Atlanta: Library North, Library South.
-  - Perimeter: CL Building, Learning Resource Center.
-- Floors:
-  - Use numerals when combined with a building name: Library North 2.
-  - Spell out when used alone: second floor, fourth floor. (Note: Always lowercase "floor" unless it starts a sentence).
+  - Perimeter: Use the specific building code (e.g., CL Building, SA Building).
+- **Addresses**: Write street names in full without trailing periods.
+  - **Example**: 100 Decatur Street SE
+- **Floors**:
+  - Use numerals with building names: Library North 2.
+  - Spell out when used alone: second floor, fourth floor. (Lowercase "floor").
 
-## 5. Digital & Web Elements
+## 3. Punctuation & Links
 
-- Hyperlinks: Always embed links in descriptive text.
-  - Yes: [View our borrowing policies](#).
-  - No: "Click here" or literal URLs like "www.library.gsu.edu".
-- Login vs. Log in: Use login as a noun/adj and log in as a verb.
+- **Ampersand (&)**: Use "&" only in headers, menus, or official titles like "Special Collections & Archives." Use "and" in all other body text.
+- **Link Text**: Use descriptive, action-oriented text.
+  - **Yes**: [Make an appointment to view materials]
+  - **No**: [Click here] or [Read more]
+- **Numbers**: Use numerals (5, 10, 20) for all counts to improve scannability.
+  - **Exception**: Spell out the number if it begins a sentence.
+
+## 4. Library Technology & Jargon
+
+- **Acronyms**: Define technical terms on first use: "Interlibrary Loan (ILL)."
+- **Database Names**: Capitalize specific tool names: ILLiad, HathiTrust, Galileo.
+- **Service Desks**: Capitalize "Reading Room" or "Exhibit Gallery" when referring to specific library spaces.
+
+## 5. Voice & Tone
+
+- **Active Voice**: Address the user directly.
+  - **Yes**: "You can pick up books at the desk."
+  - **No**: "Materials may be retrieved by staff."
+- **Plain English**: Avoid "patron." Use "user," "student," or "visitor."
