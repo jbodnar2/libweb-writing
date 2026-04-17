@@ -31,14 +31,11 @@ Revise to reduce cognitive load and improve scannability.
 ### Structural Issues
 
 {{ range .Alerts -}}
-  {{- /* Skip these two specifically so they don't double-report */ -}}
-  {{- if and (not (contains .Check "GradeLevel")) (not (contains .Check "ReadingEase")) -}}
+  {{- if or (eq .Check "Structure.SentenceLength") (eq .Check "Structure.ParagraphLength") -}}
 - **{{ .Severity | upper }}**: {{ .Message }}
   - **Location**: Line {{ .Line }}
   - **Context**: {{ printf "%.150s" .Match }}...
 
 {{ end -}}
 {{- end -}}
-
-
 {{- end -}}

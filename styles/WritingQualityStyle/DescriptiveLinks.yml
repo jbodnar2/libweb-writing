@@ -1,0 +1,5 @@
+extends: existence
+message: "Non-descriptive link text: '%s'. Use descriptive labels that explain the destination (e.g., 'ILL Request Form' instead of 'Click here')."
+level: warning
+scope: raw
+raw: '(?i)\[(click here|read more|more|here|link|this link|this)\]'

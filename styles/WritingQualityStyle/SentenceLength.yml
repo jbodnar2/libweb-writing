@@ -1,5 +1,5 @@
 extends: existence
-message: "Sentence is too long (%s words). Aim for 25 words or fewer to improve scannability."
+message: "Sentence exceeds 25 words. Break it up to improve scannability."
 level: warning
 scope: sentence
 # This regex counts words.
