@@ -1,14 +1,8 @@
-Master of Arts
-Master of Science
-Master's degree
-MARTA
-GIL
-PantherCard
-PantherCash
-alumna
-alumni
-Alumni
-alumnus
-Emeriti
-EXLab
-iCollege
+accessibility
+curatorial
+digitization
+interdisciplinary
+learning literacy
+pedagogy
+scholarly
+undergraduate
