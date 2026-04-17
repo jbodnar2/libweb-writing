@@ -1,0 +1,7 @@
+extends: existence
+message: "Sentence is too long (%s words). Aim for 25 words or fewer to improve scannability."
+level: warning
+scope: sentence
+# This regex counts words.
+# It triggers if there are 26 or more words in a single sentence.
+raw: '([^\s]+\s+){25,}'

@@ -1,0 +1,6 @@
+extends: existence
+message: "Paragraph is too dense (%s words). Break this into smaller chunks or a list to help users scan."
+level: warning
+scope: paragraph
+# Triggers when a paragraph exceeds 60 words.
+raw: '([^\s]+\s+){60,}'
