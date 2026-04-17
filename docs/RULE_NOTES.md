@@ -884,3 +884,56 @@ Here is how those numbers compare to standard writing styles:
 - **The 100-word Warning:** This is a "Red Light." It tells the writer: "Even a motivated researcher will likely skim or skip this. You are losing your audience."
 
 By using these specific numbers, you are training your staff to write for the **medium** (the screen) rather than the **subject** (the library).
+
+Your current messaging is technically accurate but medically dry. It identifies the score without explaining the **impact** on the reader. For an academic library, your report should help the writer understand whether the complexity matches the intended audience (e.g., a freshman looking for a printer vs. a faculty member researching archives).
+
+### Proposed Messaging Strategy
+
+I recommend updating your YAML files to include a **"Contextual Fit"** description. This clarifies that a high score isn't necessarily "bad"—it just might be in the wrong place.
+
+#### 1. Flesch-Kincaid Grade Level (Lower is Better)
+
+| Grade Level     | Proposed Message Text                     | Suitability Context                                          |
+| :-------------- | :---------------------------------------- | :----------------------------------------------------------- |
+| **0.0 – 8.0**   | **Accessible.** Clear and direct.         | Best for service pages, "How-to" guides, and mobile users.   |
+| **8.1 – 10.9**  | **Standard Academic.** Professional tone. | Suitable for general information and departmental overviews. |
+| **11.0 – 13.9** | **Complex.** High cognitive load.         | Only appropriate for research guides or policy documents.    |
+| **14.0+**       | **Difficult.** Dense academic prose.      | Risk of alienating users. Needs simplification for the web.  |
+
+#### 2. Flesch Reading Ease (Higher is Better)
+
+| Ease Score   | Proposed Message Text           | Impact                                              |
+| :----------- | :------------------------------ | :-------------------------------------------------- |
+| **70 – 100** | **Easy.** High scannability.    | Readers can skim and find info instantly.           |
+| **50 – 69**  | **Moderate.** Requires focus.   | Readers may need to read sentences twice on mobile. |
+| **0 – 49**   | **Low.** Heavy effort required. | Likely to be ignored by students in a hurry.        |
+
+---
+
+### Implementation: Updating your YAML Files
+
+To implement this, update the `message` field in your individual metric files:
+
+**Readability-GradeLevel-Med.yml**
+
+```yaml
+extends: metric
+message: "%s. 'Standard Academic' level. Good for general info, but consider simplifying for service pages."
+level: suggestion
+# ... formula and condition ...
+```
+
+**Readability-Ease-Low.yml**
+
+```yaml
+extends: metric
+message: "%s. 'Low' ease. This content requires high effort and may be difficult to scan on mobile."
+level: warning
+# ... formula and condition ...
+```
+
+### Why this works better for you
+
+By adding these descriptions, you move from being a "grammar cop" to a **UX consultant**. When a librarian sees a "College Level" result, they will now know that it is fine for their Research Guide but needs a rewrite for the "Library Hours" page.
+
+Would you like me to rewrite the full set of six YAML messages to follow this "Contextual Fit" style?

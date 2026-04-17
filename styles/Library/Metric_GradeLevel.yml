@@ -1,6 +1,0 @@
-extends: metric
-message: "Grade Level: %s (Target 8 or lower)"
-level: warning
-formula: |
-  (0.39 * (words / sentences)) + (11.8 * (syllables / words)) - 15.59
-condition: ">= 0"

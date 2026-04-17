@@ -1,0 +1,13 @@
+# Paragraphs
+---
+extends: existence
+message: "Density Alert: This paragraph exceeds 60 words. Long blocks of text can appear intimidating; consider adding a line break to improve scannability."
+level: suggestion
+scope: paragraph
+raw: '(?s)(\b\w+\b\W*){60,}'
+---
+extends: existence
+message: "Wall of Text: This paragraph exceeds 100 words. Research indicates library users frequently skip blocks of this size. Break this into smaller, manageable ideas."
+level: warning
+scope: paragraph
+raw: '(?s)(\b\w+\b\W*){100,}'

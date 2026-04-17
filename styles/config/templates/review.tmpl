@@ -1,35 +1,41 @@
 {{- range .Files -}}
+{{- /* Variable Initialization */ -}}
+{{- $gl := "No data recorded" -}}
+{{- $re := "No data recorded" -}}
+{{- /* Data Collection & Prioritization */ -}}
+{{- range .Alerts -}}
+  {{- if eq .Check "GradeLevel.Difficult" }}{{ $gl = .Message -}}
+  {{- else if and (eq .Check "GradeLevel.Complex") (eq $gl "No data recorded") }}{{ $gl = .Message -}}
+  {{- else if and (eq .Check "GradeLevel.Academic") (eq $gl "No data recorded") }}{{ $gl = .Message -}}
+  {{- else if and (eq .Check "GradeLevel.Accessible") (eq $gl "No data recorded") }}{{ $gl = .Message -}}
+  {{- end -}}
+  {{- if eq .Check "ReadingEase.Low" }}{{ $re = .Message -}}
+  {{- else if and (eq .Check "ReadingEase.Moderate") (eq $re "No data recorded") }}{{ $re = .Message -}}
+  {{- else if and (eq .Check "ReadingEase.Easy") (eq $re "No data recorded") }}{{ $re = .Message -}}
+  {{- end -}}
+{{- end -}}
 # Review of {{ .Path }}
 
-## Readability
+## Readability Assessment
 
-Ensure content is accessible to all users across all devices by reducing cognitive load and improving scannability.
+Reduce cognitive load and improve scannability.
 
-### Assessment
+**Flesch Reading Ease**: Higher scores are better
+- Target: 70 or higher
+- Score: {{ $re }}
 
-{{ range .Alerts }}
-    {{- if or (eq .Check "Library.Metric_GradeLevel") (eq .Check "Library.Metric_ReadingEase") }}
-- {{ .Message }}
-    {{- end }}
-{{- end }}
+**Flesch-Kincaid Grade Level**: Lower scores are better
+- Target: 8 or lower
+- Score: {{ $gl }}
 
-### Structural Issues (Sentences & Paragraphs)
+### Structural Issues
 
-{{ range .Alerts }}
-    {{- if eq .Check "Library.Structure_Length" }}
-* **[{{ .Severity | upper }}]** {{ .Message }}
-  **Context:** "{{ printf "%.100s" .Match }}..."
-  **Location:** Line {{ .Line }}
+{{ range .Alerts -}}
+  {{- if or (eq .Check "Structure.SentenceLength") (eq .Check "Structure.ParagraphLength") -}}
+- **{{ .Severity | upper }}**: {{ .Message }}
+  - **Location**: Line {{ .Line }}
+  - **Context**: {{ printf "%.150s" .Match }}...
 
-{{ end }}
-{{- end }}
-
----
-
-### Other Style Issues
-{{ range .Alerts }}
-    {{- if and (ne .Check "Library.Metric_GradeLevel") (ne .Check "Library.Metric_ReadingEase") (ne .Check "Library.Structure_Length") (ne .Check "Library.Structure_Length-orig") }}
-* **[{{ .Severity | upper }}]** Line {{ .Line }}: [{{ .Check }}] {{ .Message }}
-    {{- end }}
-{{- end }}
 {{ end -}}
+{{- end -}}
+{{- end -}}

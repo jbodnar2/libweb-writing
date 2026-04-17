@@ -1,0 +1,5 @@
+extends: metric
+message: "%s. 'Accessible. Good for service pages, 'How-to' guides, and mobile users."
+level: warning
+formula: (0.39 * (words / sentences)) + (11.8 * (syllables / words)) - 15.59
+condition: "< 8.1"

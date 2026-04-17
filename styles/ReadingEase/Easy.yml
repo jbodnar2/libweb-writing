@@ -1,0 +1,5 @@
+extends: metric
+message: "%s. Easy. Readers can skim and find info easily."
+level: suggestion
+formula: 206.835 - (1.015 * (words / sentences)) - (84.6 * (syllables / words))
+condition: ">= 70.0"

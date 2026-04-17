@@ -1,5 +1,0 @@
-# Readability Stress Test
-
-This paragraph is intentionally written as a dense block that should trigger both sentence and paragraph readability checks because it uses long constructions, repeated qualifiers, and stacked clauses that make scanning difficult for users who are trying to complete tasks quickly on a service-oriented website where they need immediate answers rather than extended background context that delays action and buries key details in the middle of a very large paragraph that continues far beyond an easy reading threshold while still remaining only one paragraph for test purposes, and it keeps going with additional filler context, procedural side notes, repeated qualifiers, and extra explanatory language solely to guarantee this paragraph is long enough to cross the paragraph warning threshold used by the readability rules in this repository.
-
-This sentence is intentionally long to trigger the high-risk threshold because it contains more than thirty words and keeps adding descriptive phrases that are not strictly necessary for users to complete the task.
