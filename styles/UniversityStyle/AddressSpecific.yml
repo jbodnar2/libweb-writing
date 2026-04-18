@@ -1,0 +1,15 @@
+extends: substitution
+message: "Library Style: Use '%s' for specific buildings/addresses."
+level: warning
+ignorecase: true
+swap:
+  "Welch Gallery": "Ernest G. Welch School of Art & Design Gallery"
+  "One Park Place": "1 Park Place SE"
+  "Speakers Auditorium": "Speaker's Auditorium"
+  # Simplified regex for the address
+  "103 Decatur St": "100 Decatur Street SE"
+  "103 Decatur St.": "100 Decatur Street SE"
+  "103 Decatur St SE": "100 Decatur Street SE"
+  "103 Decatur St. SE": "100 Decatur Street SE"
+  "103 Decatur Street": "100 Decatur Street SE"
+  "103 Decatur Street SE": "100 Decatur Street SE"

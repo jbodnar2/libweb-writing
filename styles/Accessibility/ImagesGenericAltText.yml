@@ -1,0 +1,8 @@
+extends: existence
+message: "Alt text '%s' is generic. Describe the image content or its function."
+level: warning
+scope: raw
+ignorecase: true
+# We look for these words inside the brackets of a Markdown image
+# Regex: ![(generic_word)...]
+match: '!\[(image|photo|picture|graphic|icon|logo|banner|thumbnail|screenshot|diagram|chart|figure|img)\s*]'

@@ -1,0 +1,9 @@
+extends: existence
+message: "Image link missing descriptive alt text."
+level: error
+scope: raw
+# Matches ![]() where the alt text is empty or just a file extension
+tokens:
+  - '![]\('
+  - '!\[\]\('
+  - '!\[[a-z]+\]\([^)]*\.(png|jpg|jpeg|gif)\)' # If alt is just the filename

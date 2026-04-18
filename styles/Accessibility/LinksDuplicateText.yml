@@ -1,0 +1,15 @@
+extends: repetition
+message: "Link text '%s' appears %d times. Make each link unique."
+level: warning
+scope: document
+min: 2
+tokens:
+  - "Download"
+  - "Read More"
+  - "Learn More"
+  - "Click Here"
+  - "View Details"
+  - "PDF"
+  - "Report"
+
+ignore:

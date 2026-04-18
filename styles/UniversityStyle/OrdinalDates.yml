@@ -1,0 +1,6 @@
+extends: existence
+message: "GSU Style: Do not use ordinal indicators (1st, 2nd) with months. Use 'March 15, 2024'."
+level: warning
+ignorecase: false
+tokens:
+  - '\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(st|nd|rd|th)\b'

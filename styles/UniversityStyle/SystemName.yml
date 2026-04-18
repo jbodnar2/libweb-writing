@@ -1,0 +1,7 @@
+extends: existence
+message: "GSU Style: On first reference, use 'University System of Georgia'. Subsequent references may use 'USG'."
+level: suggestion
+ignorecase: false
+tokens:
+  - '\bUSG\b'
+# Note: Like the "GSU" rule, this flags ALL instances. The message must remind the writer to check context.

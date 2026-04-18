@@ -1,0 +1,6 @@
+extends: existence
+message: "GSU Academic Style: Do not use both 'Dr.' and ', Ph.D.' for the same person. Use either 'Dr. [Name]' or '[Name], Ph.D.'."
+level: warning
+ignorecase: false
+tokens:
+  - '\bDr\.\s+\w+\s+\w+,\s*Ph\.D\.'

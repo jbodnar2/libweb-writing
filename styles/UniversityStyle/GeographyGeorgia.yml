@@ -1,0 +1,9 @@
+extends: substitution
+message: "GSU Style: Use 'Georgia' instead of 'State of Georgia'."
+level: warning
+ignorecase: true
+swap:
+  "state of georgia": "Georgia"
+  "State of Georgia": "Georgia"
+  # Exception: If it's part of a specific official title, you might need to whitelist it,
+  # but usually "Georgia" is preferred even in titles (e.g., "Georgia Board of Regents").

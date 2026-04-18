@@ -5,13 +5,13 @@
 !.vscode/tasks.json
 
 # --- Synced Styles / Packages ('vale sync') ---
-styles/Microsoft/
-styles/Google/
-styles/alex/
-styles/proselint/
-styles/Readability/
-styles/write-good/
-styles/Joblint/
+# styles/Microsoft/
+# styles/Google/
+# styles/alex/
+# styles/proselint/
+# styles/Readability/
+# styles/write-good/
+# styles/Joblint/
 .vale/
 
 # --- Generated Reviews ---

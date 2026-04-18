@@ -1,0 +1,13 @@
+extends: substitution
+message: "GSU Library Style: Use official unit name '%s'."
+level: warning
+ignorecase: true
+swap:
+  "reference services": "Reference Services"
+  "interlibrary loan": "Interlibrary Loan"
+  "special collections": "Special Collections"
+  "circulation department": "Circulation Department"
+  "instruction services": "Instruction Services"
+  "research services": "Research Services"
+  "digital initiatives": "Digital Initiatives"
+  "archives": "University Archives"

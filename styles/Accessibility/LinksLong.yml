@@ -1,0 +1,8 @@
+extends: occurrence
+message: "Link text is too long (%d characters). Aim for under 60 characters."
+level: suggestion
+scope: raw
+max: 60
+# This is tricky in Vale. You might need a custom rule or a pre-commit script.
+# Vale's 'occurrence' rule counts tokens, not character length of a specific span.
+# Recommendation: Use a custom script for length checks.

@@ -1,0 +1,13 @@
+extends: existence
+message: "Link text '%s' is not descriptive. Include the document title."
+level: warning
+ignorecase: true
+tokens:
+  - '\bPDF\b'
+  - '\bDOCX?\b'
+  - '\bJPEG?\b'
+  - '\bPNG\b'
+  - '\bVIDEO\b'
+  - '\bAUDIO\b'
+  - '\bFILE\b'
+  - '\bATTACHMENT\b'

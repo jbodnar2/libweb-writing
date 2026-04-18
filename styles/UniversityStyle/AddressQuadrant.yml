@@ -1,0 +1,8 @@
+extends: existence
+message: "Atlanta address missing quadrant (NE, SE, NW, SW). Ensure the quadrant follows the street type."
+level: error
+ignorecase: true
+# This flags "Street" if it is NOT immediately followed by a quadrant.
+# It assumes the quadrant is right after the street type.
+tokens:
+  - '\b(?:Street|Avenue|Boulevard|Drive|St|Ave|Blvd|Dr)\s*(?!NE|SE|NW|SW)\b'

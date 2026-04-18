@@ -1,0 +1,6 @@
+extends: existence
+message: "GSU Style: Use an em-dash (—) without spaces for parenthetical statements, not a hyphen with spaces ( - )."
+level: warning
+tokens:
+  - ' \- ' # Matches " - " (space hyphen space)
+  - " -- " # Matches " -- " (space double hyphen space)

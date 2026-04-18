@@ -1,17 +1,5 @@
 extends: existence
-message: "GSU Style: Avoid all-caps for emphasis."
+message: "GSU Style: Avoid all-caps for emphasis. Use bold or italics instead."
 level: suggestion
-tokens:
-  - '\b[A-Z]{5,}\b'
-exceptions:
-  - GSU
-  - URSA
-  - WCAG
-  - MARTA
-  - ILL
-  - ILLiad
-  - EXLab
-  - CURVE
-  - ICPSR
-  - ANOVA
-  - CATLAB
+ignorecase: false
+match: '\b(?!MARTA|ICPSR|ANOVA|CATLAB|HTTPS|CURVE)[A-Z]{5,}\b'

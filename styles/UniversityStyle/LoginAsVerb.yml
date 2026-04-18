@@ -1,0 +1,6 @@
+extends: existence
+message: "Use 'log in' (two words) as a verb (e.g., 'log in to your account')."
+level: warning
+ignorecase: true
+tokens:
+  - '\blogin (to|with|using|into)\b'

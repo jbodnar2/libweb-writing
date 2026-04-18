@@ -1,0 +1,10 @@
+extends: existence
+message: "Use full street types in addresses (Street, Avenue, Boulevard, Drive) instead of abbreviations."
+level: warning
+ignorecase: true
+# Matches St, Ave, Blvd, Dr (with optional periods)
+tokens:
+  - '\b(St\.?|Ave\.?|Blvd\.?|Dr\.?)\b'
+# Note: This will flag "St" even if it's not an address.
+# To be more precise, you might want to restrict it to lines with numbers.
+# But for a general style check, this is acceptable.

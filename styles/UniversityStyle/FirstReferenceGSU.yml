@@ -1,6 +1,6 @@
 extends: existence
-message: "GSU Style: Use 'Georgia State University' on first reference before using 'GSU'."
-level: warning
+message: "GSU Style Reminder: Ensure 'Georgia State University' is used on the FIRST reference. If this is a subsequent mention, you may ignore this warning."
+level: suggestion
 ignorecase: false
 tokens:
-  - "GSU"
+  - "\bGSU\b"

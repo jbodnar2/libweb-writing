@@ -1,8 +1,17 @@
 extends: existence
-message: "GSU Style: Use lowercase a.m./p.m., no ':00', and use 'noon'/'midnight'."
+message: "GSU Style: Use lowercase 'a.m.'/'p.m.' with periods, no ':00', and use 'noon'/'midnight'."
 level: warning
+ignorecase: true
 tokens:
+  # Flag ":00" usage (e.g., 9:00)
   - '\d+:00'
-  - '\d+ [AP]M'
-  - '12 p\.?m\.?'
-  - '12 a\.?m\.?'
+
+  # Flag 12 a.m. or 12 p.m. (Should be noon/midnight)
+  - '\b12\s+[ap]\.?m\.?\b'
+
+  # Flag Uppercase AM/PM (e.g., 9AM, 9PM)
+  - '\b\d+\s*[AP]M\b'
+
+  # Flag Lowercase am/pm WITHOUT periods (e.g., 9am, 9 am)
+  # Uses negative lookahead to ensure no period follows
+  - '\b\d+\s*[ap]m\b(?!\.?)'

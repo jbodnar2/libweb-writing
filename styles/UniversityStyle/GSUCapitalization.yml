@@ -1,0 +1,13 @@
+extends: substitution
+message: "GSU Style: Use lowercase '%s'."
+level: warning
+ignorecase: true
+swap:
+  "Internet": "internet"
+  "Website": "website"
+  "E-mail": "email"
+  "e-mail": "email"
+  "Healthcare": "healthcare"
+  "Coronavirus": "coronavirus"
+  "Social Media": "social media"
+  "Social-media": "social media"

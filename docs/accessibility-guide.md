@@ -9,10 +9,12 @@
 ## 2. Meaningful Link Text
 
 - **Descriptive Action**: Link text must describe the destination or the action.
-  - **Yes**: [Download the Floor Map (PDF)] or [Search the Library Catalog]
-  - **No**: [Click here], [Read more], or [Link]
+  - **Yes**: [Download the Floor Map (PDF)](#) or [Search the Library Catalog](#)
+  - **No**: [Click here]($), [Read more], or [Link](#)
 - **Unique Text**: Avoid having multiple links on the same page with the same text that point to different destinations.
 - **File Types**: If a link opens a file (PDF, Excel), include the file type in the link text.
+
+See the list of [bad link categories](accessibililty/links.md) types for more information.
 
 ## 3. Image Alt Text
 
@@ -28,7 +30,7 @@
 
 - **Two-Part Requirement**: Complex visuals require a short alt text identifier AND a full text description immediately nearby.
   - **Alt text**: "Map of Atlanta Campus Library floors; see text below for detailed directory."
-  - **Nearby Text**: Provide a list of locations for each floor.
+  - **Nearby Text**: Provides a list of locations for each floor.
 
 ## 5. Color and Contrast
 

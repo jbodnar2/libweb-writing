@@ -1,0 +1,5 @@
+extends: existence
+message: "GSU Style: Use the serial (Oxford) comma (e.g., 'A, B, and C')."
+level: warning
+tokens:
+  - '\w+,\s+\w+\s+and\s+\w+' # Matches "apples, oranges and bananas"

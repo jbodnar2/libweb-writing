@@ -1,0 +1,6 @@
+extends: existence
+message: "GSU Style: Do not capitalize seasons (spring, summer, fall, winter) unless part of a proper name (e.g., 'Spring 2024 Semester')."
+level: suggestion
+ignorecase: false
+tokens:
+  - '\b(Spring|Summer|Fall|Winter)\s+(Semester|Quarter|Term)\b'

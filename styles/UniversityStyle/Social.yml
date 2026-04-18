@@ -1,6 +1,21 @@
 extends: existence
-message: "Confirmed GSU Social Branding: '%s'"
-level: suggestion
-ignorecase: true
+message: "GSU Social Branding: Use official CamelCase format (e.g., '#TheStateWay', '#GoState')."
+level: warning
+ignorecase: false
 tokens:
-  - "#TheStateWay"
+  # Flag lowercase versions of official tags
+  - "#thestateway"
+  - "#gostate"
+  - "#stateathletics"
+  - "#gsulife"
+  - "#gsualumni"
+  - "#gsufuture"
+
+  # Flag hyphenated or underscored versions
+  - "#the-state-way"
+  - "#go-state"
+  - "#state-athletics"
+  - "#gsu-life"
+
+  # Flag weird capitalization (e.g., #TheStateWAY)
+  - "#[A-Z][a-z]+[A-Z]{2,}"

@@ -1,0 +1,18 @@
+extends: substitution
+message: "GSU Academic Style: Use '%s'."
+level: warning
+ignorecase: true
+swap:
+  "doctoral degree": "doctorate"
+  "bachelor's of": "bachelor's degree in"
+  "master's of": "master's degree in"
+  "Bachelor's of": "Bachelor's degree in"
+  "Master's of": "Master's degree in"
+  "B.A": "B.A."
+  "B.S": "B.S."
+  "M.A": "M.A."
+  "M.S": "M.S."
+  "PhD": "Ph.D."
+  "PHD": "Ph.D."
+  "MBA": "M.B.A."
+  "EdD": "Ed.D."

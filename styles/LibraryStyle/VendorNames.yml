@@ -1,0 +1,18 @@
+extends: substitution
+message: "GSU Library Style: Use correct vendor name '%s'."
+level: warning
+ignorecase: true
+swap:
+  "ebscohost": "EBSCOhost"
+  "proquest": "ProQuest"
+  "jstor": "JSTOR"
+  "sciencedirect": "ScienceDirect"
+  "google scholar": "Google Scholar"
+  "web of science": "Web of Science"
+  "scopus": "Scopus"
+  "lexisnexis": "LexisNexis"
+  "westlaw": "Westlaw"
+  "oup": "Oxford University Press"
+  "elsevier": "Elsevier"
+  "sage": "SAGE Publications"
+  "taylor & francis": "Taylor & Francis"

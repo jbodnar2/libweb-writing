@@ -1,0 +1,10 @@
+extends: existence
+message: "GSU Library Style: Lowercase 'library' when used generically (e.g., 'the library,' not 'the Library')."
+level: suggestion
+ignorecase: false
+# Flags generic uses like "the Library", "a Library", or "Library services"
+# It naturally ignores proper names like "University Library" or "Library South"
+tokens:
+  - '\bthe\s+Library\b'
+  - '\ba\s+Library\b'
+  - '\bLibrary\s+(services|card|hours|staff|building)\b'

@@ -1,0 +1,37 @@
+extends: substitution
+message: "GSU Style: Use '%s'."
+level: error
+ignorecase: true
+swap:
+  # Academic Terms (Inclusive Language)
+  "freshman": "first-year student"
+  "freshmen": "first-year students"
+  "sophomore": "second-year student"
+  "sophomores": "second-year students"
+  "junior": "third-year student"
+  "juniors": "third-year students"
+  "senior": "fourth-year student"
+  "seniors": "fourth-year students"
+  "underclassman": "lower-division student"
+  "underclassmen": "lower-division students"
+  "upperclassman": "upper-level student"
+  "upperclassmen": "upper-level students"
+
+  # Campus Locations & Buildings
+  "GSU Campus Store": "University Bookstore"
+  "Gordon St.": "Gordon Street"
+  "Butler St.": "Butler Street"
+  "Peachtree St.": "Peachtree Street"
+  "Marietta St.": "Marietta Street"
+
+  # Official College Names
+  "Robinson College": "J. Mack Robinson College of Business"
+  "Lewis College": "Byrdine F. Lewis College of Nursing & Health Professions"
+  "Welch School": "Ernest G. Welch School of Art & Design"
+  "Young School": "Andrew Young School of Policy Studies"
+
+  # Punctuation & Formatting
+  "John Smith, Jr.": "John Smith Jr."
+  "Jane Doe, Sr.": "Jane Doe Sr."
+  "special collections": "Special Collections"
+  "university archives": "University Archives"

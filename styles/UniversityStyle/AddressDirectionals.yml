@@ -1,0 +1,7 @@
+extends: existence
+message: "Use directionals without periods (e.g., 'SE', not 'S.E.')."
+level: warning
+ignorecase: true
+# Matches N.E., S.E., N.W., S.W. (with periods)
+tokens:
+  - '\b(N\.E\.|S\.E\.|N\.W\.|S\.W\.)\b'

@@ -1,0 +1,11 @@
+extends: existence
+message: "Image is missing alt text. Add a description: !['description'](url)."
+level: error
+scope: raw
+ignorecase: false
+# Matches Markdown: ![](...)
+tokens:
+  - '![]\('
+  - '!\[\]\('
+  # Matches HTML: <img ... alt="" ...>
+  - '<img[^>]+alt=["\x27]{2}[^>]*>'

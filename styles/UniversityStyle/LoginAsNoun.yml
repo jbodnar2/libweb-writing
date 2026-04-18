@@ -1,0 +1,6 @@
+extends: existence
+message: "Use 'login' (one word) as a noun/adjective (e.g., 'login page', 'login credentials')."
+level: suggestion
+ignorecase: true
+tokens:
+  - '\blog in (page|credentials|details|screen|info|information)\b'

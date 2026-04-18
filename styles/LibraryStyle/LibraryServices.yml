@@ -1,0 +1,11 @@
+extends: substitution
+message: "GSU Library Style: Use official service name '%s'."
+level: warning
+ignorecase: true
+swap:
+  "libguides": "LibGuides"
+  "research guides": "Research Guides"
+  "illiad": "ILLiad"
+  "catalog": "Catalog"
+  "discovery service": "Discovery Service"
+  "database search": "Database Search"

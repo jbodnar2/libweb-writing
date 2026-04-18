@@ -1,0 +1,7 @@
+extends: existence
+message: "GSU Alumni Style: Use a curly apostrophe (’) for class years (e.g., (’24)), not a straight apostrophe (')."
+level: suggestion
+ignorecase: false
+tokens:
+  - \(\s*\w+\s*\'\d{2}\s*\)
+  - \(\s*\w+\s*`\d{2}\s*\)

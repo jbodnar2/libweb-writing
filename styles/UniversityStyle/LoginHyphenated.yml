@@ -1,0 +1,7 @@
+extends: substitution
+message: "GSU/Library Style: Use '%s' instead of '%s'."
+level: warning
+ignorecase: false
+swap:
+  log-in: log in
+  Log-in: Log in

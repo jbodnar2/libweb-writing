@@ -1,0 +1,10 @@
+extends: substitution
+message: "GSU Library Style: Use '%s' for material types."
+level: suggestion
+ignorecase: true
+swap:
+  "ebook": "e-book"
+  "e book": "e-book"
+  "electronic": "digital"
+  "physical": "print"
+  "medium": "format"

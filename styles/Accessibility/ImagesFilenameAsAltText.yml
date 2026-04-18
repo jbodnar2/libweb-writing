@@ -1,0 +1,7 @@
+extends: existence
+message: "Alt text '%s' looks like a filename. Describe the image content instead."
+level: warning
+scope: raw
+ignorecase: true
+# Matches ![(filename.ext)]
+match: '!\[(.*\.(jpg|jpeg|png|gif|svg|bmp|webp))\]\('

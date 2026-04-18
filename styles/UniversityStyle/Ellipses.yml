@@ -1,0 +1,7 @@
+extends: existence
+message: "GSU Style: Use an ellipsis (...) with a space before and after, not two dots (..) or four dots (....)."
+level: suggestion
+tokens:
+  - '\.\.' # Matches ".."
+  - '\.\.\.\.' # Matches "...."
+  - '\.\.\.\s*\.' # Matches "... ." (extra dot)

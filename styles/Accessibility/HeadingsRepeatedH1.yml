@@ -1,0 +1,5 @@
+extends: occurrence
+message: "Multiple H1 headings found. A page should typically have only one main title (H1)."
+level: error
+scope: heading.h1
+min: 2
