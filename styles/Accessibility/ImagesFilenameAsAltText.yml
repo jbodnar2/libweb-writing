@@ -3,5 +3,5 @@ message: "Alt text '%s' looks like a filename. Describe the image content instea
 level: warning
 scope: raw
 ignorecase: true
-# Matches ![(filename.ext)]
-match: '!\[(.*\.(jpg|jpeg|png|gif|svg|bmp|webp))\]\('
+tokens:
+  - '!\[(.*\.(jpg|jpeg|png|gif|svg|bmp|webp))\]\('

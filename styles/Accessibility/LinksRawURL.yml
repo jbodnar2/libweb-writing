@@ -1,6 +1,7 @@
 extends: existence
 message: "Avoid using raw URLs as link text. Replace with descriptive text."
 level: error
-scope: link.text
+scope: raw
 # This regex checks if the link text starts with a URL protocol or 'www'
-match: '^(https?://|www\.)'
+tokens:
+  - '^(https?://|www\.)'
