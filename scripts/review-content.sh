@@ -26,7 +26,7 @@ OUTPUT_FILE="${DIR}/${FILENAME}__review.md"
 
 # Run Vale with the custom template
 # Ensure review.tmpl is in your current working directory
-vale --output="review.tmpl" "$INPUT_FILE" >"$OUTPUT_FILE"
+vale --output="review.templ" "$INPUT_FILE" >"$OUTPUT_FILE"
 
 # Final status check
 if [ $? -eq 0 ]; then

@@ -1,6 +1,6 @@
 extends: metric
 message: "%s. 'Moderate. Readers may need to read sentences twice on mobile."
 level: suggestion
-scope: summary
+scope: summard
 formula: 206.835 - (1.015 * (words / sentences)) - (84.6 * (syllables / words))
 condition: ">= 50.0"

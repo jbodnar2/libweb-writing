@@ -1,5 +1,5 @@
 extends: existence
-message: "Paragraph is too dense (%s words). Break this into smaller chunks or a list to help users scan."
+message: "Paragraph is too dense. Break this into smaller chunks or a list to help users scan."
 level: warning
 scope: paragraph
 # Triggers when a paragraph exceeds 60 words.

@@ -1,0 +1,53 @@
+{{- range .Files -}}
+{{- /* Variable Initialization */ -}}
+{{- $gl := "No data recorded" -}}
+{{- $re := "No data recorded" -}}
+{{- /* Data Collection & Prioritization */ -}}
+{{- range .Alerts -}}
+  {{- if eq .Check "GradeLevel.Difficult" }}{{ $gl = .Message -}}
+  {{- else if and (eq .Check "GradeLevel.Complex") (eq $gl "No data recorded") }}{{ $gl = .Message -}}
+  {{- else if and (eq .Check "GradeLevel.Academic") (eq $gl "No data recorded") }}{{ $gl = .Message -}}
+  {{- else if and (eq .Check "GradeLevel.Accessible") (eq $gl "No data recorded") }}{{ $gl = .Message -}}
+  {{- end -}}
+  {{- if eq .Check "ReadingEase.Low" }}{{ $re = .Message -}}
+  {{- else if and (eq .Check "ReadingEase.Moderate") (eq $re "No data recorded") }}{{ $re = .Message -}}
+  {{- else if and (eq .Check "ReadingEase.Easy") (eq $re "No data recorded") }}{{ $re = .Message -}}
+  {{- end -}}
+{{- end -}}
+# Review of {{ .Path }}
+
+# Reading Ease & Grade Level
+
+**Reading Ease**:
+- Target: 70 or higher
+- Score: {{ $re }}
+
+**Grade Level**:
+- Target: 8 or lower
+- Score: {{ $gl }}
+
+# Readability
+
+
+{{ range .Alerts -}}
+  {{- /* Skip these two specifically so they don't double-report */ -}}
+  {{-  if and  (contains .Check "Readability.ParagraphLength")  -}}
+- **{{ .Severity | upper }}**: {{ .Message }}
+  - **Location**: Line {{ .Line }}
+  - **Context**: {{ printf "%.75s" .Match }}...
+    {{ end -}}
+{{- end -}}
+
+## Long Sentences
+
+{{ range .Alerts -}}
+  {{- /* Skip these two specifically so they don't double-report */ -}}
+  {{-  if and  (contains .Check "Readability.SentenceLength")  -}}
+- **{{ .Severity | upper }}**: {{ .Message }}
+  - **Location**: Line {{ .Line }}
+  - **Context**: {{ printf "%.75s" .Match }}...
+
+{{ end -}}
+{{- end -}}
+
+{{- end -}}
