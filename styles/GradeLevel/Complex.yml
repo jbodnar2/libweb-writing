@@ -1,5 +1,6 @@
 extends: metric
 message: "%s. Complex. Only appropriate for research guides or policy documents."
 level: warning
+scope: summary
 formula: (0.39 * (words / sentences)) + (11.8 * (syllables / words)) - 15.59
 condition: "> 11.0"

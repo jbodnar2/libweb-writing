@@ -1,7 +1,7 @@
 extends: existence
 message: "Avoid vague link text like '%s'. Describe the destination."
 level: error
-scope: link.text
+scope: raw
 ignorecase: true
 tokens:
   - "click here"

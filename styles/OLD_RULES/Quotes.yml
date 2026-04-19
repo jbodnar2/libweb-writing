@@ -1,6 +1,0 @@
-extends: existence
-message: "GSU Style: Do not use a comma at the start of a partial or indirect quotation."
-level: warning
-tokens:
-  - 'was the\s+,\s+“'
-  - 'said the\s+,\s+“'

@@ -1,5 +1,0 @@
-extends: existence
-message: "GSU Style: Omit comma when independent clause precedes a dependent clause (although, because, if, etc.)."
-level: warning
-tokens:
-  - ',\s+(although|because|if|once|when|while)'

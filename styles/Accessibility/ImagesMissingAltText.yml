@@ -1,7 +1,7 @@
 extends: existence
 message: "Image is missing alt text. Add a description: !['description'](url)."
 level: error
-scope: raw
+scope: alt
 ignorecase: false
 # Matches Markdown: ![](...)
 tokens:

@@ -1,5 +1,6 @@
 extends: metric
 message: "%s. Difficult. Risk of alienating users. Simplify for the web."
 level: warning
+scope: summary
 formula: (0.39 * (words / sentences)) + (11.8 * (syllables / words)) - 15.59
 condition: ">= 14.0"
