@@ -54,3 +54,5 @@ Articles are usually delivered in three business days. However, submissions of m
 #### How do I access my article?
 
 You will receive a notification to your email account that your requested article has been delivered. Log in to [ILLiad](https://gsu.illiad.oclc.org/illiad/gsu/logon.html) to retrieve your article. It will remain in the system for 30 days.
+
+[(Edit)](https://library.gsu.edu/wp-admin/post.php?post=81&action=edit) [Edit with WPBakery Page Builder](https://library.gsu.edu/wp-admin/post.php?vc_action=vc_inline&post_id=81&post_type=page)

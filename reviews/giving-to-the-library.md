@@ -1,3 +1,17 @@
+# Giving to the Library
+
+## [Giving to the Library](https://library.gsu.edu/giving/)
+
+## Giving to the Library
+
+Your contribution to the University Library helps build a dynamic, engaging, enriching environment for Georgia State’s students, scholars and artists.
+
+##### Jeff Steely, Dean of Libraries
+
+[GIVE NOW](https://donate.gsu.edu/s/give?dsgt=02D49)
+
+[ANNUAL REPORT](https://static.library.gsu.edu/annual-reports/UL-Annual-Report-FY23-24.pdf)
+
 ### Support the Library
 
 The Georgia State University Library is a hub for research, learning, and community engagement. From curating special collections to providing cutting-edge technology and study spaces, we strive to meet the evolving needs of our users.
@@ -32,3 +46,5 @@ Your generosity helps us:
 **We welcome gifts of books written by Georgia State faculty that are not currently in our general collection**. Please contact [Skye Hardesty, skye@gsu.edu](https://library.gsu.edu/giving/skye@gsu.edu), Head, Collection Development & Discovery, to donate this material.
 
 Would you like to donate historical materials for future researchers? Visit our [Donating to Special Collections and Archives](https://library.gsu.edu/special-collections/donate/) page to learn more about donating to our rare and unique collections.
+
+[(Edit)](https://library.gsu.edu/wp-admin/post.php?post=414&action=edit) [Edit with WPBakery Page Builder](https://library.gsu.edu/wp-admin/post.php?vc_action=vc_inline&post_id=414&post_type=page)
