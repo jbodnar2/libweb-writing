@@ -16,38 +16,55 @@
 {{- end -}}
 # Review of {{ .Path }}
 
-# Reading Ease & Grade Level
+## Reading Ease & Level
 
-**Reading Ease**:
-- Target: 70 or higher
-- Score: {{ $re }}
+| Metric | Target | Score (interpretation) |
+| ------ | ------ | ----- |
+| Reading Ease | 70 or higher. | {{ $re }} |
+| Grade Level | 8 or lower. | {{ $gl }} |
 
-**Grade Level**:
-- Target: 8 or lower
-- Score: {{ $gl }}
-
-# Readability
-
+## Readability
 
 {{ range .Alerts -}}
-  {{- /* Skip these two specifically so they don't double-report */ -}}
-  {{-  if and  (contains .Check "Readability.ParagraphLength")  -}}
-- **{{ .Severity | upper }}**: {{ .Message }}
+  {{- if and (contains .Check "Readability.ParagraphLength") -}}
+
+**{{ .Severity | upper }}**: {{ .Message }}
+
   - **Location**: Line {{ .Line }}
   - **Context**: {{ printf "%.75s" .Match }}...
-    {{ end -}}
+  {{ end -}}
 {{- end -}}
+{{ range .Alerts -}}
+  {{- if and (contains .Check "Readability.SentenceLength") }}
+**{{ .Severity | upper }}**: {{ .Message }}
 
-## Long Sentences
+  - **Location**: Line {{ .Line }}
+  - **Context**: {{ printf "%.75s" .Match }}...
+  {{ end -}}
+{{- end }}
+
+## Library Style
 
 {{ range .Alerts -}}
-  {{- /* Skip these two specifically so they don't double-report */ -}}
-  {{-  if and  (contains .Check "Readability.SentenceLength")  -}}
+  {{- /* Grouping LibraryStyle (12 characters) */ -}}
+  {{- if eq (printf "%.12s" .Check) "LibraryStyle" }}
+**{{ .Severity | upper }}**: {{ .Message }}
+
+  - **Location**: Line {{ .Line }}
+  - **Context**: {{ .Match }}...
+  {{ end -}}
+{{- end }}
+
+## Other Styles
+
+{{ range .Alerts -}}
+  {{- /* Example for a style with a 3-character prefix like 'GSU' */ -}}
+  {{- if eq (printf "%.3s" .Check) "GSU" -}}
 - **{{ .Severity | upper }}**: {{ .Message }}
   - **Location**: Line {{ .Line }}
-  - **Context**: {{ printf "%.75s" .Match }}...
+  - **Context**: {{ .Match }}...
 
-{{ end -}}
-{{- end -}}
+  {{ end -}}
+{{- end }}
 
 {{- end -}}

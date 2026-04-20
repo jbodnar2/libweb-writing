@@ -1,6 +1,6 @@
 extends: existence
 message: "GSU Library Style: Lowercase 'library' when used generically (e.g., 'the library,' not 'the Library')."
-level: suggestion
+level: warning
 ignorecase: false
 # Flags generic uses like "the Library", "a Library", or "Library services"
 # It naturally ignores proper names like "University Library" or "Library South"
