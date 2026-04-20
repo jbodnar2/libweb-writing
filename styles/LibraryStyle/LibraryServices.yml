@@ -1,5 +1,5 @@
 extends: substitution
-message: "GSU Library Style: Use official service name '%s'."
+message: "GSU Library Style: Use official service name '%s' for the service."
 level: warning
 ignorecase: true
 swap:

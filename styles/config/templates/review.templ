@@ -48,7 +48,7 @@
 {{ range .Alerts -}}
   {{- /* Grouping LibraryStyle (12 characters) */ -}}
   {{- if eq (printf "%.12s" .Check) "LibraryStyle" }}
-**{{ .Severity | upper }}**: {{ .Message }}
+**{{ .Severity | upper }} ({{ .Check }})**: {{ .Message }}
 
   - **Location**: Line {{ .Line }}
   - **Context**: {{ .Match }}...
