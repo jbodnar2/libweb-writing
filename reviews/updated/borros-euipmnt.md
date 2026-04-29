@@ -80,5 +80,3 @@ Items for checkout by library with loan periods
 - Only one of each item type can be borrowed at the same time.
 - Loan periods vary. Overdue fines for first-come, first-serve equipment is $5 per day for items with one-week loan periods and $5 per hour for items with an eight-hour loan period. Overdue fines for reservable equipment are found in the item details description.
 - Borrowing polices for books and media items can be found on the [Borrowing Policies](/services-and-spaces/borrowing-services/borrowing-policies/) page.
-
-[(Edit)](https://library.gsu.edu/wp-admin/post.php?post=112&action=edit) [Edit with WPBakery Page Builder](https://library.gsu.edu/wp-admin/post.php?vc_action=vc_inline&post_id=112&post_type=page)

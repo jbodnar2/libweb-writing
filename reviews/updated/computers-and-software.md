@@ -60,5 +60,3 @@ See [Reserve a Space](/services-and-spaces/spaces-and-technology/reserve-a-space
 ### Wifi
 
 Wireless access is available via [Georgia State’s wireless network](https://technology.gsu.edu/technology-services/it-services/wireless-networks/).
-
-[(Edit)](https://library.gsu.edu/wp-admin/post.php?post=113&action=edit) [Edit with WPBakery Page Builder](https://library.gsu.edu/wp-admin/post.php?vc_action=vc_inline&post_id=113&post_type=page)

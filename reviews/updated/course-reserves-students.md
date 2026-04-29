@@ -17,5 +17,3 @@ Reserves are books, articles, videos and other materials assigned by your instru
 - **How many Reserve items can I check out at a time?** You are limited to 2 books or 1 media item.
 - **What if I return a Reserve item late?** Overdue fines vary according to the loan period. $5 per hour or $5 per day
 - **I’m an instructor. How do I request items to be put on Reserve?** See our [Course Reserves for Faculty](/research/research-tools/course-reserves-faculty/) page for policies and procedures.
-
-[(Edit)](https://library.gsu.edu/wp-admin/post.php?post=61&action=edit) [Edit with WPBakery Page Builder](https://library.gsu.edu/wp-admin/post.php?vc_action=vc_inline&post_id=61&post_type=page)
